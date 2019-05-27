@@ -10,5 +10,7 @@ import interfaz.Interfaz;
  *
  */
 public enum combustible implements Interfaz {
+	
+	
 
 }
