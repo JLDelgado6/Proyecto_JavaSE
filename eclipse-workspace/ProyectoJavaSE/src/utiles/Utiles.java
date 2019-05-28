@@ -25,4 +25,16 @@ public class Utiles {
 		String respuesta = lecturaString(pregunta);
 		return Double.parseDouble( respuesta );
 	}
+	public static void introducir() {
+		
+	}
+	public static void modificar() {
+		
+	}
+	public static void borrar() {
+	
+}
+	public static void listar() {
+	
+}
 }

@@ -6,6 +6,7 @@ public class App {
 		App app = new App();
 		app.start();
 	}
+	
 	private void start() {		
 		int opcion = 0;
 		do {mostrarMenu();
@@ -16,10 +17,10 @@ public class App {
 	}
 	private void ejecutarOpcion(int opcion) {
 		switch(opcion) {
-		case 1:System.out.println("funciona 1") ; break;
-		case 2:System.out.println("funciona 2") ; break;
-		case 3:System.out.println("funciona 3") ; break;
-		case 4:System.out.println("funciona 4") ; break;
+		case 1:utiles.Utiles.introducir() ; break;
+		case 2:utiles.Utiles.modificar() ; break;
+		case 3:utiles.Utiles.borrar() ; break;
+		case 4:utiles.Utiles.listar() ; break;
 		case 0:System.out.println("Saliendo....");break;
 		default:System.out.println("Por favor, elija una opción entre 0-4");break;
 		}
