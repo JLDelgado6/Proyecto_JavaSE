@@ -6,11 +6,10 @@ public class App {
 		App app = new App();
 		app.start();
 	}
-	
 	private void start() {		
 		int opcion = 0;
 		do {mostrarMenu();
-			opcion = utiles.Utiles.lecturaEntero("* Opción (0-Salir): ");
+			opcion = utiles.Utiles.lecturaEntero("* Pulsar 0 para salir. ");
 			ejecutarOpcion(opcion);
 		} while (opcion != 0);
 		

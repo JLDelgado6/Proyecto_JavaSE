@@ -8,7 +8,6 @@ public class Avion extends Volador{
 		this.maxPasajeros = maxPasajeros;
 		this.numTurbinas = numTurbinas;
 	}
-	
 	public Avion() {
 	}
 
