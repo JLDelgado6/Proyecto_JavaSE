@@ -1,8 +1,6 @@
 package tierra;
 
 import interfaz.Interfaz;
-import tipos.TpCOM;
-import start.Vehiculo;
 
 /**
  * author: JLDelgado6
