@@ -16,3 +16,7 @@ public class Traccion extends Vehiculo {
 		
 		
 }
+
+private Integer getPotencia() {
+	return null;
+ }}
