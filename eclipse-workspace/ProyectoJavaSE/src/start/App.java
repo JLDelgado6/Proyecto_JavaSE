@@ -22,7 +22,7 @@ public class App {
 		case 3:System.out.println("funciona 3") ; break;
 		case 4:System.out.println("funciona 4") ; break;
 		case 0: System.out.println("Saliendo....");break;
-		
+		default: System.out.println("Por favor, elija una opción entre 0-4");break;
 		}
 	}
 	private void mostrarMenu() {
