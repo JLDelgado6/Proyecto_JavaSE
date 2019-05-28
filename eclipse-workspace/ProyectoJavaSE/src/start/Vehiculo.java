@@ -6,6 +6,12 @@ public class Vehiculo {
 	public Vehiculo(String numBastidor) {
 		this.numBastidor = numBastidor;
 	}
+	
+
+	public Vehiculo() {
+		super();
+	}
+
 
 	public String getNumBastidor() {
 		return numBastidor;
