@@ -37,7 +37,6 @@ public class Utiles {
 	public static void listar() {
 	
 }
-	public static void salir() {
-		System.out.println("Saliendo...");
+	public static void salir() {System.out.println("Saliendo...");
 	}
 }
