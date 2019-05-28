@@ -11,17 +11,19 @@ public class App {
 		int opcion = 0;
 		do {
 			mostrarMenu();
-			opcion = utiles.Utiles.lecturaEntero("Opción (0-Salir): ");
+			opcion = utiles.Utiles.lecturaEntero("* Opción (0-Salir): ");
 			ejecutarOpcion(opcion);
 		} while (opcion != 0);
 		
 	}
 	private void ejecutarOpcion(int opcion) {
 		switch(opcion) {
-		case 1: ; break;
-		case 2: ; break;
-		case 3: ; break;
-		case 4: ; break;
+		case 1:System.out.println("funciona 1") ; break;
+		case 2:System.out.println("funciona 2") ; break;
+		case 3:System.out.println("funciona 3") ; break;
+		case 4:System.out.println("funciona 4") ; break;
+		case 0: System.out.println("Saliendo....");break;
+		
 		}
 	}
 	private void mostrarMenu() {
