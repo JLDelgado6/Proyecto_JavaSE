@@ -21,7 +21,7 @@ public class App {
 		case 2:utiles.Utiles.modificar() ; break;
 		case 3:utiles.Utiles.borrar() ; break;
 		case 4:utiles.Utiles.listar() ; break;
-		case 0:utiles.Utiles.salir() ;;break;
+		case 0:utiles.Utiles.salir() ;break;
 		default:System.out.println("Por favor, elija una opción entre 0-4");break;
 		}
 	}

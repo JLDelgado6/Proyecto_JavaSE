@@ -38,6 +38,6 @@ public class Utiles {
 	
 }
 	public static void salir() {
-		System.out.println("Saliendo del programa.....");
+		System.out.println("Saliendo...");
 	}
 }
