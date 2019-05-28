@@ -15,7 +15,6 @@ public class Utiles {
 		}
 		return respuesta;
 	}
-
 	public static Integer lecturaEntero(String pregunta) {
 		String respuesta = lecturaString(pregunta);
 		return Integer.parseInt( respuesta );

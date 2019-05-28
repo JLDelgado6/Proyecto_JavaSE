@@ -10,6 +10,7 @@ public class Volador extends Vehiculo{
 		this.alturaMaxima = alturaMaxima;
 		this.kmAutonomia = kmAutonomia;
 	}
+	
 	public Volador(){
 	}
 	public Integer getAlturaMaxima() {

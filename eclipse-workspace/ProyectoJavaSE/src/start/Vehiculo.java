@@ -12,7 +12,6 @@ public class Vehiculo {
 		super();
 	}
 
-
 	public String getNumBastidor() {
 		return numBastidor;
 	}

@@ -10,7 +10,6 @@ public class Avion extends Volador{
 	}
 	public Avion() {
 	}
-
 	public Integer getMaxPasajeros() {
 		return maxPasajeros;
 	}
