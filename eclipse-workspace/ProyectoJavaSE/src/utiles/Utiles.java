@@ -15,7 +15,6 @@ public class Utiles {
 		}
 		return respuesta;
 	}
-
 	public static Integer lecturaEntero(String pregunta) {
 		String respuesta = lecturaString(pregunta);
 		return Integer.parseInt( respuesta );
@@ -24,5 +23,19 @@ public class Utiles {
 	public static Double lecturaDecimal(String pregunta) {
 		String respuesta = lecturaString(pregunta);
 		return Double.parseDouble( respuesta );
+	}
+	public static void introducir() {
+		
+	}
+	public static void modificar() {
+		
+	}
+	public static void borrar() {
+	
+}
+	public static void listar() {
+	
+}
+	public static void salir() {System.out.println("Saliendo...");
 	}
 }
