@@ -9,8 +9,7 @@ public class App {
 	
 	private void start() {		
 		int opcion = 0;
-		do {
-			mostrarMenu();
+		do {mostrarMenu();
 			opcion = utiles.Utiles.lecturaEntero("* Opción (0-Salir): ");
 			ejecutarOpcion(opcion);
 		} while (opcion != 0);
