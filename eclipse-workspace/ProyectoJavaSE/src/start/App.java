@@ -25,7 +25,7 @@ public class App {
 		case 2:utiles.Modificar.modificar() ; break;
 		case 3:utiles.Borrar.borrar() ; break;
 		case 4:utiles.Listar.listar() ; break;
-		case 0:System.out.println("Saliendo..."); ;break;
+		case 0:System.out.println("Saliendo.\nSaliendo..\nSaliendo..."); ;break;
 		default:System.out.println("Por favor, elija una opción entre 0-4");break;
 		}
 	}
