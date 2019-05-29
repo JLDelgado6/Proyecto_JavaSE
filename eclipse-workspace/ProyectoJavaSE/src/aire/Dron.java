@@ -13,6 +13,7 @@ public class Dron extends Volador implements Interfaz{
 	}
 	
 	public Dron() {
+		super();
 	}
 	public TpCAM getTipoCamara() {
 		return tipoCamara;

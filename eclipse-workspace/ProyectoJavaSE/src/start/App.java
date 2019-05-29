@@ -1,5 +1,12 @@
 package start;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import empresa.Dept;
+import geometria.TTlado;
+import geometria.Triangulo;
+
 public class App {
 
 	public static void main(String[] args) {
@@ -10,18 +17,18 @@ public class App {
 	private void start() {		
 		int opcion = 0;
 		do {mostrarMenu();
-			opcion = utiles.Utiles.lecturaEntero("* Pulsar 0 para salir. ");
+			opcion = utiles.LecturaTeclado.lecturaEntero("* Pulsar 0 para salir. ");
 			ejecutarOpcion(opcion);
 		} while (opcion != 0);
 		
 	}
 	private void ejecutarOpcion(int opcion) {
 		switch(opcion) {
-		case 1:utiles.Utiles.introducir() ; break;
-		case 2:utiles.Utiles.modificar() ; break;
-		case 3:utiles.Utiles.borrar() ; break;
-		case 4:utiles.Utiles.listar() ; break;
-		case 0:utiles.Utiles.salir() ;break;
+		case 1:utiles.Introducir.introducir() ; break;
+		case 2:utiles.Modificar.modificar() ; break;
+		case 3:utiles.Borrar.borrar() ; break;
+		case 4:utiles.Listar.listar() ; break;
+		case 0:System.out.println("Saliendo..."); ;break;
 		default:System.out.println("Por favor, elija una opción entre 0-4");break;
 		}
 	}
@@ -35,5 +42,6 @@ public class App {
 		System.out.println("******************************");
 
 	}
+	
 
 }
