@@ -29,6 +29,7 @@ public class Avion extends Volador{
 				+ getAlturaMaxima() + ", getKmAutonomia()=" + getKmAutonomia() + ", getNumBastidor()="
 				+ getNumBastidor() + "]";
 	}
+			
+	}
 	
 	
-}

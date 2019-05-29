@@ -2,11 +2,13 @@ package aire;
 
 import interfaz.Interfaz;
 import tipos.TpCAM;
+import tipos.TpCAR;
 
 public class Dron extends Volador implements Interfaz{
 	private TpCAM tipoCamara;
 	private Integer potencia;
-	public Dron(String numBastidor,Integer alturaMaxima, Integer kmAutonomia, TpCAM tipoCamara, Integer potencia) {
+	private TpCAR Carnet;
+	public Dron(String numBastidor,Integer alturaMaxima, Integer kmAutonomia, TpCAM tipoCamara, Integer potencia, TpCAR tipoCarnet) {
 		super(numBastidor, alturaMaxima, kmAutonomia);
 		this.tipoCamara = tipoCamara;
 		this.potencia = potencia;
@@ -35,9 +37,12 @@ public class Dron extends Volador implements Interfaz{
 
 	@Override
 	public String toString() {
-		return "Dron [tipoCamara=" + tipoCamara + ", potencia=" + potencia + ", getAlturaMaxima()=" + getAlturaMaxima()
-				+ ", getKmAutonomia()=" + getKmAutonomia() + ", getNumBastidor()=" + getNumBastidor() + "]";
+		return "Dron [tipoCamara=" + tipoCamara + ", potencia=" + potencia + ", Carnet=" + Carnet
+				+ ", getAlturaMaxima()=" + getAlturaMaxima() + ", getKmAutonomia()=" + getKmAutonomia()
+				+ ", getNumBastidor()=" + getNumBastidor() + "]";
 	}
+
+	
 
 	}
 
