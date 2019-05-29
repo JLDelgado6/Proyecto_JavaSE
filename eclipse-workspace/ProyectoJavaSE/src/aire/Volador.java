@@ -12,6 +12,7 @@ public class Volador extends Vehiculo{
 	}
 	
 	public Volador(){
+		super();
 	}
 	public Integer getAlturaMaxima() {
 		return alturaMaxima;

@@ -12,6 +12,7 @@ public class Dron extends Volador{
 	}
 	
 	public Dron() {
+		super();
 	}
 	public TpCAM getTipoCamara() {
 		return tipoCamara;
