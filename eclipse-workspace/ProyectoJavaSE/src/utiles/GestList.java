@@ -7,7 +7,7 @@ import start.Vehiculo;
 
 public class GestList {
 	
-	private static List<Vehiculo> lstVehiculos = new ArrayList<>();
+	static List<Vehiculo> lstVehiculos = new ArrayList<>();
 	
 	
 	public static void Introducir(Vehiculo v) {

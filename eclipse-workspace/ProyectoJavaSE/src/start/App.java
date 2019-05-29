@@ -9,8 +9,7 @@ public class App {
 		App app = new App();
 		app.start();
 	}
-	public static List<Vehiculo> lstVehiculos = new ArrayList<>();
-	
+
 	private void start() {		
 		int opcion = 0;
 		do {mostrarMenu();

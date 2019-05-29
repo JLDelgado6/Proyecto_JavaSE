@@ -13,19 +13,20 @@ import tipos.TpCOM;
 public class Listar {
 	public static void listar() {
 		
-		start.App.lstVehiculos.add( new Coche( "ER345678901234567","RENAULT","MEGANE",TpCOM.GASOLINA,5,2, TpCAR.B1));
-		start.App.lstVehiculos.add( new Coche( "CD345678901234567","PEUGEOT","ZZ",TpCOM.GASOLINA,5,2, TpCAR.B1));
-		start.App.lstVehiculos.add( new Avion( "AS345678901234567", 128, 9000,50,82) );
-		start.App.lstVehiculos.add( new Coche( "NV345678901234567","FORD","FOCUS",TpCOM.GASOLINA,5,2, TpCAR.B1));
-		start.App.lstVehiculos.add( new Camion("RT345678901234567", "IVECO", "DAILY",TpCOM.DIESEL,5400,6,TpCAR.C1) );
-		start.App.lstVehiculos.add( new Dron(  "KL345678901234567", 15, 250,TpCAM._4K,5400,TpCAR.C1) );
-		start.App.lstVehiculos.add( new Avion( "EW345678901234567", 124, 50000,540,8) );
-		start.App.lstVehiculos.add( new Coche( "TY345678901234567","FORD","FIESTA",TpCOM.GASOLINA,5,2, TpCAR.B1));
+		utiles.GestList.lstVehiculos.add( new Coche( "ER345678901234567","RENAULT","MEGANE",TpCOM.GASOLINA,5,2, TpCAR.B1));
+		utiles.GestList.lstVehiculos.add( new Coche( "CD345678901234567","PEUGEOT","ZZ",TpCOM.GASOLINA,5,2, TpCAR.B1));
+		utiles.GestList.lstVehiculos.add( new Avion( "AS345678901234567", 128, 9000,50,82) );
+		utiles.GestList.lstVehiculos.add( new Coche( "NV345678901234567","FORD","FOCUS",TpCOM.GASOLINA,5,2, TpCAR.B1));
+		utiles.GestList.lstVehiculos.add( new Camion("RT345678901234567", "IVECO", "DAILY",TpCOM.DIESEL,5400,6,TpCAR.C1) );
+		utiles.GestList.lstVehiculos.add( new Dron(  "KL345678901234567", 15, 250,TpCAM._4K,5400,TpCAR.C1) );
+		utiles.GestList.lstVehiculos.add( new Avion( "EW345678901234567", 124, 50000,540,8) );
+		utiles.GestList.lstVehiculos.add( new Coche( "TY345678901234567","FORD","FIESTA",TpCOM.GASOLINA,5,2, TpCAR.B1));
+		
 		String salida = "";
 		
-		for (Vehiculo v : start.App.lstVehiculos) {
+		for (Vehiculo v : utiles.GestList.lstVehiculos) {
 			if (v instanceof Coche) {
-				salida =+ start.App.lstVehiculos.indexOf(v)+ " COCHE  " 
+				salida =+ utiles.GestList.lstVehiculos.indexOf(v)+ " COCHE  " 
 						+          v.getNumBastidor() + " "
 						+ ((Coche) v).getModelo() + " " 
 						+ ((Coche) v).getTipoCombustible() + " "
@@ -35,7 +36,7 @@ public class Listar {
 						
 			}
 			if (v instanceof Camion) {
-				salida = start.App.lstVehiculos.indexOf(v)+ " CAMION " 
+				salida = utiles.GestList.lstVehiculos.indexOf(v)+ " CAMION " 
 						+          v.getNumBastidor() + " "
 						+ ((Camion) v).getMarca() + " " 
 						+ ((Camion) v).getModelo() + " " 
@@ -45,7 +46,7 @@ public class Listar {
 						+  " ";
 			}
 			if (v instanceof Dron) {
-				salida = start.App.lstVehiculos.indexOf(v)+ " DRON   " 
+				salida = utiles.GestList.lstVehiculos.indexOf(v)+ " DRON   " 
 						+          v.getNumBastidor() + " "
 						+ ((Dron) v).getAlturaMaxima() + " "
 						+ ((Dron) v).getKmAutonomia() + " "
@@ -54,7 +55,7 @@ public class Listar {
 						+  " ";  
 			}
 			if (v instanceof Avion) {
-				salida =start.App.lstVehiculos.indexOf(v)+ " AVION  " 
+				salida =utiles.GestList.lstVehiculos.indexOf(v)+ " AVION  " 
 						
 						+          v.getNumBastidor() + " "
 						+ ((Avion) v).getAlturaMaxima() + " "
