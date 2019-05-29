@@ -52,7 +52,11 @@ public class Coche extends Traccion implements Interfaz {
 		return volumenMaletero*2;
 	}
 	
-	public void getCarnet() {}
-	public void setCarnet() {}
+	public void getCarnet() {
+		return;
+	}
+	public void setCarnet() {
+		return;
+	}
 
 }

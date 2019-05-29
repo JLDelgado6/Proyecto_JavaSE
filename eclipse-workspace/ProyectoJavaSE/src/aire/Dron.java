@@ -31,6 +31,7 @@ public class Dron extends Volador implements Interfaz{
 	}
 	
 	public void getCarnet() {
+		
 	}
 	public void setCarnet() { 
 	}
