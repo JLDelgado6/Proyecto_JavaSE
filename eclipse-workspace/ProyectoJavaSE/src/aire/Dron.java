@@ -1,8 +1,9 @@
 package aire;
 
+import interfaz.Interfaz;
 import tipos.TpCAM;
 
-public class Dron extends Volador{
+public class Dron extends Volador implements Interfaz{
 	private TpCAM tipoCamara;
 	private Integer potencia;
 	public Dron(String numBastidor,Integer alturaMaxima, Integer kmAutonomia, TpCAM tipoCamara, Integer potencia) {
@@ -25,6 +26,12 @@ public class Dron extends Volador{
 	public void setPotencia(Integer potencia) {
 		this.potencia = potencia;
 	}
+	
+	public void getCarnet() {
+	}
+	public void setCarnet() {
+	}
+	
 	@Override
 	public String toString() {
 		return "Dron [tipoCamara=" + tipoCamara + ", potencia=" + potencia + "]";
