@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 
 public class LecturaTeclado {
 
+	
 	public static String lecturaString(String pregunta) {
 		BufferedReader teclado = new BufferedReader(new InputStreamReader(System.in));
 		String respuesta = "";

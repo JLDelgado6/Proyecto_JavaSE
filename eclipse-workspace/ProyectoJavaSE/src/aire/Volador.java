@@ -5,6 +5,7 @@ import start.Vehiculo;
 public class Volador extends Vehiculo{
 	private Integer alturaMaxima;
 	private Integer kmAutonomia;
+	
 	public Volador(String numBastidor, Integer alturaMaxima, Integer kmAutonomia) {
 		super(numBastidor);
 		this.alturaMaxima = alturaMaxima;
