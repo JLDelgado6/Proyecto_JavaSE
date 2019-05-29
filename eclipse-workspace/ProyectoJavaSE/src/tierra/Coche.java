@@ -1,24 +1,25 @@
 package tierra;
 
 import interfaz.Interfaz;
+import tipos.TpCOM;
 
 /**
  * author: JLDelgado6
  */
 
-public class Coche extends Traccion {
+public class Coche extends Traccion implements Interfaz {
 	
 	private Integer numPuertas;
 	private Integer volumenMaletero;
-	
-	public Coche(String numBastidor) {
-		super(numBastidor);
-	}
-	
-	public Coche(String numBastidor, Integer numPuertas, Integer volumenMaletero) {
-		super(numBastidor);
+
+	public Coche(String numBastidor, String marca, String modelo, TpCOM tipoCombustible, Integer numPuertas, Integer volumenMaletero) {
+		super(numBastidor, marca, modelo, tipoCombustible);
 		this.numPuertas = numPuertas;
 		this.volumenMaletero = volumenMaletero;
+	}
+	
+	public Coche() {
+		super();
 	}
 
 	public Integer getNumPuertas() {
@@ -43,6 +44,7 @@ public class Coche extends Traccion {
 				+ ". Volumen del Maletero: " + volumenMaletero  + ". Tipo de Combustible: " + getTipoCombustible() + "]";
 	}
 	
-	
+	public void getCarnet() {}
+	public void setCarnet() {}
 
 }

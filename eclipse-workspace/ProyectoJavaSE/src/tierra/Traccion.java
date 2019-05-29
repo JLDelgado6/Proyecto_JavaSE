@@ -13,8 +13,8 @@ public class Traccion extends Vehiculo {
 		private String modelo;
 		private TpCOM tipoCombustible;
 
-		public Traccion(String numBastidor) {
-			super(numBastidor);
+		public Traccion() {
+			super();
 		}
 
 		public Traccion(String numBastidor, String marca, String modelo, TpCOM tipoCombustible) {

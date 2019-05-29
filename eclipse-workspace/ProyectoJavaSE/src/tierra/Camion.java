@@ -1,24 +1,25 @@
 package tierra;
 
 import interfaz.Interfaz;
+import tipos.TpCOM;
 
 /**
  * author: JLDelgado6
  */
 
-public class Camion extends Traccion {
+public class Camion extends Traccion implements Interfaz {
 
 	private Integer tara;
 	private Integer numEjes;
 	
-	public Camion(String numBastidor) {
-		super(numBastidor);
-	}
-	
-	public Camion(String numBastidor, Integer tara, Integer numEjes) {
-		super(numBastidor);
+	public Camion(String numBastidor, String marca, String modelo, TpCOM tipoCombustible, Integer tara, Integer numEjes) {
+		super(numBastidor, marca, modelo, tipoCombustible);
 		this.tara = tara;
 		this.numEjes = numEjes;
+	}
+	
+	public Camion() {
+		super();
 	}
 
 	public Integer getTara() {
@@ -44,9 +45,7 @@ public class Camion extends Traccion {
 	}
 	
 	
-	
-	
-	
-	
-	
+	public void getCarnet() {}
+	public void setCarnet() {}
+		
 }
