@@ -41,9 +41,6 @@ public class Dron extends Volador implements Interfaz{
 				+ ", getAlturaMaxima()=" + getAlturaMaxima() + ", getKmAutonomia()=" + getKmAutonomia()
 				+ ", getNumBastidor()=" + getNumBastidor() + "]";
 	}
-
-	
-
 	}
 
 	
