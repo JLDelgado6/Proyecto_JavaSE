@@ -45,6 +45,9 @@ public class Camion extends Traccion implements Interfaz {
 				+ ". Tipo de Combustible: " + getTipoCombustible() + "]";
 	}
 	
+	public Integer getPotencia() {
+		return tara*numEjes;
+	}
 	
 	public void getCarnet() {}
 	public void setCarnet() {}

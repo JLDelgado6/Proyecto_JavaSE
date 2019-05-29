@@ -7,7 +7,7 @@ import start.Vehiculo;
  * author: JLDelgado6
  */
 
-public class Traccion extends Vehiculo {
+public abstract class Traccion extends Vehiculo {
 
 		private String marca;
 		private String modelo;
@@ -57,8 +57,6 @@ public class Traccion extends Vehiculo {
 					+ ". Potencia: " + getPotencia() + ". Número de Bastidor: " + getNumBastidor() + "]";
 		}
 
-		private Integer getPotencia() {
-	return null;
- }
+		public abstract Integer getPotencia();
 
 }

@@ -45,6 +45,10 @@ public class Coche extends Traccion implements Interfaz {
 				+ ". Volumen del Maletero: " + volumenMaletero  + ". Tipo de Combustible: " + getTipoCombustible() + "]";
 	}
 	
+	public Integer getPotencia() {
+		return volumenMaletero*2;
+	}
+	
 	public void getCarnet() {}
 	public void setCarnet() {}
 
