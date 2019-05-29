@@ -1,5 +1,7 @@
 package utiles;
 
+import tipos.TpCAR;
+
 public class Introducir {
 	public static void introducir() {
 		
@@ -19,7 +21,7 @@ public class Introducir {
 			    String c = utiles.LecturaTeclado.lecturaString("- Modelo: ");
 			    Integer d = utiles.LecturaTeclado.lecturaEntero("- Números de Puertas: ");
 			    Integer e = utiles.LecturaTeclado.lecturaEntero("- Volumen del maletero");
-			
+			    TpCAR f = utiles.LecturaTeclado.lecturaTpCAR("- Tipo de Carnet");
 			}    
 			    
 		}

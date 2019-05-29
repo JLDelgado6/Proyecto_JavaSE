@@ -34,17 +34,18 @@ public class LecturaTeclado {
 		int opcion = 0;
 		do {mostrarMenu();
 				opcion = utiles.LecturaTeclado.lecturaEntero("* Pulsar 0 para salir. ");
-				ejecutarOpcion(opcion);
+				
 			} while (opcion != 0);
+		return ejecutarOpcion(opcion);
 		}
 		
-	    private static TpCAR ejecutarOpcion (int opcion) {
-	    	TpCAR f;
+	    private static TpCAR ejecutarOpcion (Integer opcion) {
+	    	TpCAR f = null;
 			switch (opcion) {
-			   case 1: f = TpCAR.B1 ;
-			   case 2: f = TpCAR.B2;
-			   case 3: f = TpCAR.C1;
-			   case 4: f = TpCAR.D;
+			   case 1: f = TpCAR.B1;break;
+			   case 2: f = TpCAR.B2;break;
+			   case 3: f = TpCAR.C1;break;
+			   case 4: f = TpCAR.D;break;
 			}
 			return f;
 	    }
@@ -52,10 +53,10 @@ public class LecturaTeclado {
 	    private static void mostrarMenu() {
 				System.out.println("\nMENU TIPO DE CARNET");
 				System.out.println("******************************");
-				System.out.println("*Opción 1. Carnet B1*");
-				System.out.println("*Opción 2. Carnet B2*");
-				System.out.println("*Opción 3. Carnet C*");
-				System.out.println("*Opción 4. Carnet D*");
+				System.out.println("*Opción 1. Carnet B1 *");
+				System.out.println("*Opción 2. Carnet B2 *");
+				System.out.println("*Opción 3. Carnet C *");
+				System.out.println("*Opción 4. Carnet D *");
 				System.out.println("******************************");			
 		}
 }
