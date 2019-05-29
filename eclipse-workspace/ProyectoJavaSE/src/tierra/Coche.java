@@ -12,14 +12,14 @@ public class Coche extends Traccion implements Interfaz {
 	private Integer numPuertas;
 	private Integer volumenMaletero;
 
+	public Coche() {
+		super();
+	}
+	
 	public Coche(String numBastidor, String marca, String modelo, TpCOM tipoCombustible, Integer numPuertas, Integer volumenMaletero) {
 		super(numBastidor, marca, modelo, tipoCombustible);
 		this.numPuertas = numPuertas;
 		this.volumenMaletero = volumenMaletero;
-	}
-	
-	public Coche() {
-		super();
 	}
 
 	public Integer getNumPuertas() {

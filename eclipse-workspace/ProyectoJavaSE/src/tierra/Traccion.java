@@ -24,8 +24,6 @@ public class Traccion extends Vehiculo {
 			this.tipoCombustible = tipoCombustible;
 		}
 
-		
-
 		public String getMarca() {
 			return marca;
 		}
