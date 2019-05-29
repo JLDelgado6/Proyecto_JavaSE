@@ -1,6 +1,7 @@
 package tierra;
 
 import interfaz.Interfaz;
+import tipos.TpCAR;
 import tipos.TpCOM;
 
 /**
@@ -11,15 +12,17 @@ public class Camion extends Traccion implements Interfaz {
 
 	private Integer tara;
 	private Integer numEjes;
+	private TpCAR Carnet;
 	
 	public Camion() {
 		super();
 	}
 	
-	public Camion(String numBastidor, String marca, String modelo, TpCOM tipoCombustible, Integer tara, Integer numEjes) {
+	public Camion(String numBastidor, String marca, String modelo, TpCOM tipoCombustible, Integer tara, Integer numEjes, TpCAR Carnet) {
 		super(numBastidor, marca, modelo, tipoCombustible);
 		this.tara = tara;
 		this.numEjes = numEjes;
+		this.Carnet = Carnet;
 	}
 	
 	
@@ -41,10 +44,13 @@ public class Camion extends Traccion implements Interfaz {
 
 	@Override
 	public String toString() {
-		return "Camion [Número de Bastidor: " + getNumBastidor() + ". Marca: " + getMarca() + ". Modelo: " + getModelo() + ". TARA: " + tara + ". Número de Ejes=" + numEjes 
-				+ ". Tipo de Combustible: " + getTipoCombustible() + "]";
+		return "Camion [Número de Bastidor: " + getNumBastidor() + ". Marca: " + getMarca() + ". Modelo: " + getModelo() + ". TARA: " + tara + ". Número de Ejes: " + numEjes 
+				+ ". Tipo de Combustible: " + getTipoCombustible() + ". Carnet: " + Carnet + "]";
 	}
 	
+	public Integer getPotencia() {
+		return tara*numEjes;
+	}
 	
 	public void getCarnet() {}
 	public void setCarnet() {}
