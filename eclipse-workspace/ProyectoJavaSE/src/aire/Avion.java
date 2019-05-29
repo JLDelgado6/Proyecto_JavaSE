@@ -25,7 +25,10 @@ public class Avion extends Volador{
 	}
 	@Override
 	public String toString() {
-		return "Avion [maxPasajeros=" + maxPasajeros + ", numTurbinas=" + numTurbinas + "]";
+		return "Avion [maxPasajeros=" + maxPasajeros + ", numTurbinas=" + numTurbinas + ", getAlturaMaxima()="
+				+ getAlturaMaxima() + ", getKmAutonomia()=" + getKmAutonomia() + ", getNumBastidor()="
+				+ getNumBastidor() + "]";
 	}
+	
 	
 }

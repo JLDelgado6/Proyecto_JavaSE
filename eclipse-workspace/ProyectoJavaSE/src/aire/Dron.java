@@ -32,13 +32,15 @@ public class Dron extends Volador implements Interfaz{
 	}
 	public void setCarnet() { 
 	}
-	
+
 	@Override
 	public String toString() {
-		return "Dron [tipoCamara=" + tipoCamara + ", potencia=" + potencia + "]";
+		return "Dron [tipoCamara=" + tipoCamara + ", potencia=" + potencia + ", getAlturaMaxima()=" + getAlturaMaxima()
+				+ ", getKmAutonomia()=" + getKmAutonomia() + ", getNumBastidor()=" + getNumBastidor() + "]";
+	}
+
 	}
 
 	
 	
 
-}
