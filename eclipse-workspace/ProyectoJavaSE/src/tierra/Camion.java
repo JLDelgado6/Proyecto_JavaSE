@@ -22,6 +22,7 @@ public class Camion extends Traccion implements Interfaz {
 		this.numEjes = numEjes;
 	}
 	
+	
 	public Integer getTara() {
 		return tara;
 	}

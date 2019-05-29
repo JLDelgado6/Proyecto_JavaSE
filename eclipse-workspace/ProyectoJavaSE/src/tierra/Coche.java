@@ -21,6 +21,7 @@ public class Coche extends Traccion implements Interfaz {
 		this.numPuertas = numPuertas;
 		this.volumenMaletero = volumenMaletero;
 	}
+	
 
 	public Integer getNumPuertas() {
 		return numPuertas;

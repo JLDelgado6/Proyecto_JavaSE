@@ -23,6 +23,7 @@ public class Traccion extends Vehiculo {
 			this.modelo = modelo;
 			this.tipoCombustible = tipoCombustible;
 		}
+		
 
 		public String getMarca() {
 			return marca;
