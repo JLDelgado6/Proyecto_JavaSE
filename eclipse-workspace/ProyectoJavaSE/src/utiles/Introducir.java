@@ -18,37 +18,41 @@ public class Introducir {
 			switch(opcion) {
 			case 1: 
 				System.out.println("Introduzca los siguientes Datos:");
-			    Integer a1 = utiles.LecturaTeclado.lecturaEntero("- Número de bastidor: ");
+			    String a1 = utiles.LecturaTeclado.lecturaString("- Número de bastidor: ");
 			    String b1 = utiles.LecturaTeclado.lecturaString("- Marca: ");
 			    String c1 = utiles.LecturaTeclado.lecturaString("- Modelo: ");
 			    Integer d1 = utiles.LecturaTeclado.lecturaEntero("- Números de Puertas: ");
 			    Integer e1 = utiles.LecturaTeclado.lecturaEntero("- Volumen del maletero: ");
 			    TpCAR f1 = utiles.LecturaTeclado.lecturaTpCAR("- Tipo de Carnet: ");
 			    TpCOM g1 = utiles.LecturaTeclado.lecturaTpCOM("- Tipo de Combustiple: ");
+			    break;
 			case 2: 
 				System.out.println("Introduzca los siguientes Datos:");
-			    Integer a2 = utiles.LecturaTeclado.lecturaEntero("- Número de bastidor: ");
+			    String a2 = utiles.LecturaTeclado.lecturaString("- Número de bastidor: ");
 			    String b2 = utiles.LecturaTeclado.lecturaString("- Marca: ");
 			    String c2 = utiles.LecturaTeclado.lecturaString("- Modelo: ");
 			    Integer d2 = utiles.LecturaTeclado.lecturaEntero("- Tara: ");
 			    Integer e2 = utiles.LecturaTeclado.lecturaEntero("- Número de Ejes: ");
 			    TpCAR f2 = utiles.LecturaTeclado.lecturaTpCAR("- Tipo de Carnet: ");
 			    TpCOM g2 = utiles.LecturaTeclado.lecturaTpCOM("- Tipo de Combustiple: ");
+			    break;
 			case 3: 
 				System.out.println("Introduzca los siguientes Datos:");
-			    Integer a3 = utiles.LecturaTeclado.lecturaEntero("- Número de bastidor: ");
+			    String a3 = utiles.LecturaTeclado.lecturaString("- Número de bastidor: ");
 			    Integer b3 = utiles.LecturaTeclado.lecturaEntero("- Altura Máxima: ");
 			    Integer c3 = utiles.LecturaTeclado.lecturaEntero("- Kilometro de Autonomía ");
 			    Integer d3 = utiles.LecturaTeclado.lecturaEntero("- Potencia ");
 			    TpCAM f3 = utiles.LecturaTeclado.lecturaTpCAM("- Tipo de Cámara: ");
 			    TpCOM g3 = utiles.LecturaTeclado.lecturaTpCOM("- Tipo de Combustiple: ");
+			    break;
 			case 4: 
 				System.out.println("Introduzca los siguientes Datos:");
-			    Integer a4 = utiles.LecturaTeclado.lecturaEntero("- Número de bastidor: ");
+			    String a4 = utiles.LecturaTeclado.lecturaString("- Número de bastidor: ");
 			    Integer b4 = utiles.LecturaTeclado.lecturaEntero("- Altura Máxima: ");
 			    Integer c4 = utiles.LecturaTeclado.lecturaEntero("- Kilometro de Autonomía ");
 			    Integer d4 = utiles.LecturaTeclado.lecturaEntero("- Máximo número de pasajeros:  ");
 			    Integer e4 = utiles.LecturaTeclado.lecturaEntero("- Máximo número de turbinas:  ");
+			    break;
 			}    
 			    
 		}
