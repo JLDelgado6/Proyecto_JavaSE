@@ -34,9 +34,8 @@ public class LecturaTeclado {
 		int opcion = 0;
 		do {mostrarMenu();
 				opcion = utiles.LecturaTeclado.lecturaEntero("* Pulsar 0 para salir. ");
-				
+				return ejecutarOpcion(opcion);
 			} while (opcion != 0);
-		return ejecutarOpcion(opcion);
 		}
 		
 	    private static TpCAR ejecutarOpcion (Integer opcion) {
@@ -46,6 +45,7 @@ public class LecturaTeclado {
 			   case 2: f = TpCAR.B2;break;
 			   case 3: f = TpCAR.C1;break;
 			   case 4: f = TpCAR.D;break;
+			   default:System.out.println("Por favor, elija una opción entre 0-4");break;
 			}
 			return f;
 	    }
