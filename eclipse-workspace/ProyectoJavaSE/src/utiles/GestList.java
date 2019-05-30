@@ -10,16 +10,22 @@ public class GestList {
 	static List<Vehiculo> lstVehiculos = new ArrayList<>();
 	
 	
-	public static void Introducir(Vehiculo v) {
+	public static void introducir(Vehiculo v) {
 		lstVehiculos.add(v);
 	}
 	
-	public static void Borrar(Integer vb) {
+	public static void borrar(Integer vb) {
 		lstVehiculos.remove(vb);
 	}
 	
 	public static List<Vehiculo> getContenido(){
-		return lstVehiculos;
+		utiles.Listar.listar();
+		return null;
+	}
+	
+	public static List<Vehiculo> modificar() {
+		utiles.Modificar.modificar();
+		return null;
 	}
 	
 	public static Integer totalElementos() {
