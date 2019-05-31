@@ -51,8 +51,15 @@ public class Camion extends Traccion implements Interfaz {
 	public Integer getPotencia() {
 		return tara*numEjes;
 	}
-	
-	public void getCarnet() {}
-	public void setCarnet() {}
+	public TpCAR getCarnet() {
+		return this.Carnet;
+
+		
+	}
+
+	public void setTipoCarnet(TpCAR Carnet) {
+		this.Carnet= Carnet;
+		
+	}
 		
 }

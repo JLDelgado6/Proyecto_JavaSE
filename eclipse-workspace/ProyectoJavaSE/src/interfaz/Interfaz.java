@@ -1,7 +1,9 @@
 package interfaz;
-
-
 public interface Interfaz {
-	public void getCarnet();
-	public void setCarnet();
+	static void getCarnet(){
+	 
+ }
+	static void setCarnet(){
+	 
+ }
 }

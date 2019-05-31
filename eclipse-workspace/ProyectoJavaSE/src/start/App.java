@@ -25,7 +25,7 @@ public class App {
 			vb = utiles.LecturaTeclado.lecturaEntero("Introduzca el elemento a borrar");
 			utiles.GestList.borrar(vb);*/ utiles.Borrar.borrar() ; break;
 			
-		case 4: utiles.GestList.getContenido() /*utiles.Listar.listar()*/ ; break;
+		case 4:utiles.GestList.inicializarLista(); utiles.GestList.getContenido();  /*utiles.Listar.listar()*/ ; break;
 		
 		case 0:System.out.println("Saliendo.\nSaliendo..\nSaliendo..."); ;break;
 		
@@ -34,12 +34,12 @@ public class App {
 	}
 	private void mostrarMenu() {
 		System.out.println("\nMENU PRINCIPAL");
-		System.out.println("******************************");
-		System.out.println("*Opción 1. Introducir un dato*");
-		System.out.println("*Opción 2. Modificar un dato *");
-		System.out.println("*Opción 3. Borrar un dato    *");
-		System.out.println("*Opción 4. Listar los datos  *");
-		System.out.println("******************************");
+		System.out.println("*******************************");
+		System.out.println("*Opción 1. Introducir un dato *");
+		System.out.println("*Opción 2. Modificar un dato  *");
+		System.out.println("*Opción 3. Borrar un dato     *");
+		System.out.println("*Opción 4. Listar los datos   *");
+		System.out.println("*******************************");
 
 	}
 	

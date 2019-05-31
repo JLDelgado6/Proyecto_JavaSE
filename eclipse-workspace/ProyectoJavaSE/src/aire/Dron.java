@@ -8,10 +8,12 @@ public class Dron extends Volador implements Interfaz{
 	private TpCAM tipoCamara;
 	private Integer potencia;
 	private TpCAR Carnet;
-	public Dron(String numBastidor,Integer alturaMaxima, Integer kmAutonomia, TpCAM tipoCamara, Integer potencia, TpCAR tipoCarnet) {
+	public Dron(String numBastidor,Integer alturaMaxima, Integer kmAutonomia, TpCAM tipoCamara, Integer potencia, TpCAR Carnet) {
 		super(numBastidor, alturaMaxima, kmAutonomia);
 		this.tipoCamara = tipoCamara;
 		this.potencia = potencia;
+		this.Carnet = Carnet;
+	
 	}
 	
 	public Dron() {
@@ -30,10 +32,13 @@ public class Dron extends Volador implements Interfaz{
 		this.potencia = potencia;
 	}
 	
-	public void getCarnet() {
-		
+	public TpCAR getCarnet() {
+		return this.Carnet;	
 	}
-	public void setCarnet() { 
+
+	public void setTipoCarnet(TpCAR Carnet) {
+		this.Carnet= Carnet;
+		
 	}
 
 	@Override

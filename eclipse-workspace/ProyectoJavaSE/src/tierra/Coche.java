@@ -23,6 +23,8 @@ public class Coche extends Traccion implements Interfaz {
 		this.numPuertas = numPuertas;
 		this.volumenMaletero = volumenMaletero;
 		this.Carnet = Carnet;
+	
+	
 	}
 	
 
@@ -47,16 +49,24 @@ public class Coche extends Traccion implements Interfaz {
 		return "Coche [Número de Bastidor: " + getNumBastidor() + ". Marca: " + getMarca() + ". Modelo: " + getModelo() + "Número de Puertas: " + numPuertas  
 				+ ". Volumen del Maletero: " + volumenMaletero  + ". Tipo de Combustible: " + getTipoCombustible() + ". Carnet: " + Carnet  + "]";
 	}
-	
-	public Integer getPotencia() {
-		return volumenMaletero*2;
-	}
-	
-	public void getCarnet() {
-		return;
-	}
-	public void setCarnet() {
-		return;
+
+	public TpCAR getCarnet() {
+		return this.Carnet;
+
+		
 	}
 
-}
+	public void setTipoCarnet(TpCAR Carnet) {
+		this.Carnet= Carnet;
+		
+	}
+
+	@Override
+	public Integer getPotencia() {
+		return null;
+	}
+	
+
+	}
+
+
