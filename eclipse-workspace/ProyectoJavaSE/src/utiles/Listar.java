@@ -21,7 +21,6 @@ public class Listar {
 		utiles.GestList.lstVehiculos.add( new Dron(  "KL345678901234567", 15, 250,TpCAM._4K,5400,TpCAR.C1) );
 		utiles.GestList.lstVehiculos.add( new Avion( "EW345678901234567", 124, 50000,540,8) );
 		utiles.GestList.lstVehiculos.add( new Coche( "TY345678901234567","FORD","FIESTA",TpCOM.GASOLINA,5,2, TpCAR.B1));
-		
 		String salida = "";
 		
 		for (Vehiculo v : utiles.GestList.lstVehiculos) {
