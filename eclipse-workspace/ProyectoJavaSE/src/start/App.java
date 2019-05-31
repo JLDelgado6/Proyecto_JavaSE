@@ -25,7 +25,7 @@ public class App {
 			vb = utiles.LecturaTeclado.lecturaEntero("Introduzca el elemento a borrar");
 			utiles.GestList.borrar(vb);*/ utiles.Borrar.borrar() ; break;
 			
-		case 4:utiles.GestList.inicializarLista(); utiles.GestList.getContenido();  /*utiles.Listar.listar()*/ ; break;
+		case 4:/*utiles.GestList.inicializarLista()*/; utiles.GestList.getContenido();  /*utiles.Listar.listar()*/ ; break;
 		
 		case 0:System.out.println("Saliendo.\nSaliendo..\nSaliendo..."); ;break;
 		
