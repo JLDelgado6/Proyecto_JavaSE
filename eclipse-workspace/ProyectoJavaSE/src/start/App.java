@@ -20,11 +20,18 @@ public class App {
 	}
 	private void ejecutarOpcion(int opcion) {
 		switch(opcion) {
-		case 1: utiles.GestList.introducir(v); /*utiles.Introducir.introducir()*/ ; break;
-		case 2: utiles.GestList.modificar() /*utiles.Modificar.modificar()*/ ; break;
-		case 3: utiles.GestList.borrar(vb); /*utiles.Borrar.borrar()*/ ; break;
+		case 1: /*utiles.GestList.introducir();*/ utiles.Introducir.introducir() ; break;
+		
+		case 2: /*utiles.GestList.modificar()*/ utiles.Modificar.modificar() ; break;
+		
+		case 3: /*Integer vb;
+			vb = utiles.LecturaTeclado.lecturaEntero("Introduzca el elemento a borrar");
+			utiles.GestList.borrar(vb);*/ utiles.Borrar.borrar() ; break;
+			
 		case 4: utiles.GestList.getContenido() /*utiles.Listar.listar()*/ ; break;
+		
 		case 0:System.out.println("Saliendo.\nSaliendo..\nSaliendo..."); ;break;
+		
 		default:System.out.println("Por favor, elija una opción entre 0-4");break;
 		}
 	}

@@ -14,8 +14,8 @@ public class GestList {
 		lstVehiculos.add(v);
 	}
 	
-	public static void borrar(Integer vb) {
-		lstVehiculos.remove(vb);
+	public static void borrar() {
+		
 	}
 	
 	public static List<Vehiculo> getContenido(){
