@@ -8,9 +8,13 @@ import tierra.Coche;
 import tipos.TpCAR;
 import tipos.TpCOM;
 
-public class ModificarSegunTipos {
+public class ModificarSegunTipos extends RuntimeException{
 
-	public static void modificarCoche(int opcion) {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	public static void modificarCoche(int opcion)  {
 		
 		Vehiculo vehiculoElegido = utiles.GestList.lstVehiculos.get(opcion);
 		mostrarCoche(opcion);
@@ -42,13 +46,18 @@ public class ModificarSegunTipos {
 							}} while(opcion3>0 ||opcion3<3);mostrarCoche(opcion);break;
 												
 						case 3: String valorNuevo1 = utiles.LecturaTeclado.lecturaString("Dame el nuevo valor (Tipo String)");
-						((Coche) vehiculoElegido).setMarca(valorNuevo1);mostrarCoche(opcion); break;
+						((Coche) vehiculoElegido).setMarca(valorNuevo1);
+						
+						;mostrarCoche(opcion); break;
 						
 						case 4: String valorNuevo11 = utiles.LecturaTeclado.lecturaString("Dame el nuevo valor (Tipo String)");
 						((Coche) vehiculoElegido).setModelo(valorNuevo11);mostrarCoche(opcion);break;
 									
-						case 5: Integer valorNuevo1111 = utiles.LecturaTeclado.lecturaEntero("Dame el nuevo valor (Tipo Integer)");
-						((Coche) vehiculoElegido).setNumPuertas(valorNuevo1111);mostrarCoche(opcion);break;
+						case 5: try {
+							Integer valorNuevo1111 = utiles.LecturaTeclado.lecturaEntero("Dame el nuevo valor (Tipo Integer)");
+						((Coche) vehiculoElegido).setNumPuertas(valorNuevo1111);mostrarCoche(opcion);break;}
+						catch(Exception e) {}
+						finally {System.out.println("No es un tipo de dato permitido");};break;
 						
 						case 6: Integer valorNuevo11111 = utiles.LecturaTeclado.lecturaEntero("Dame el nuevo valor (Tipo Integer)");
 						((Coche) vehiculoElegido).setVolumenMaletero(valorNuevo11111);mostrarCoche(opcion);break;
