@@ -63,7 +63,7 @@ public class Coche extends Traccion implements Interfaz {
 
 	@Override
 	public Integer getPotencia() {
-		return null;
+		return volumenMaletero*500;
 	}
 	
 
