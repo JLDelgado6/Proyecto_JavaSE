@@ -28,8 +28,8 @@ public class Introducir {
 		        }catch(Exception e1) {
 		        	System.out.println("XXX No es un tipo de dato permitido XXX");	
 		        }
-				introducir();
 			} while (opcion != 0);	
+		//utiles.Ordenacion.ordenacion();
 		}
 	/**
 	 * @author Sebastián
@@ -112,12 +112,12 @@ public class Introducir {
 			    if (e4 < 2 || e4 > 6) {System.out.println("XXX El Máximo Número de Turbinas no es correcto XXX");break;}
 			    
 			    utiles.GestList.lstVehiculos.add( new Avion (a4,b4,c4,d4,e4));
-			    
+			       
 				} catch(Exception e1) {
 	    			System.out.println("XXX No es un tipo de dato permitido XXX");
 	    		}
 	    		break;
-	    		
+			case 0: break;
 			default:System.out.println("XXX Por favor, elija una opción entre 0-4 XXX");
 			        introducir();
 			}    
