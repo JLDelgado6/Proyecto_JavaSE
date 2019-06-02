@@ -1,13 +1,25 @@
 package aire;
 
+/**
+ * @author Alejandro
+ * Clase avion
+ * @version 02/06/2019 
+ *
+ */
 public class Avion extends Volador{
 	private Integer maxPasajeros;
 	private Integer numTurbinas;
+	/**
+	 * Constructor completo de avion
+	 */
 	public Avion(String numBastidor,Integer alturaMaxima, Integer kmAutonomia, Integer maxPasajeros, Integer numTurbinas) {
 		super(numBastidor, alturaMaxima, kmAutonomia);
 		this.maxPasajeros = maxPasajeros;
 		this.numTurbinas = numTurbinas;
 	}
+	/**
+	 * Constructor por defecto de avion
+	 */
 	public Avion() {
 		super();
 	}

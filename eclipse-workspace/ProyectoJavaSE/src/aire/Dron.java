@@ -3,11 +3,20 @@ package aire;
 import interfaz.Interfaz;
 import tipos.TpCAM;
 import tipos.TpCAR;
+/**
+ * @author Alejandro
+ * Clase Dron
+ * @version 02/06/2019 
+ *
+ */
 
 public class Dron extends Volador implements Interfaz{
 	private TpCAM tipoCamara;
 	private Integer potencia;
 	private TpCAR Carnet;
+	/**
+	 * Constructor completo de dron
+	 */
 	public Dron(String numBastidor,Integer alturaMaxima, Integer kmAutonomia, TpCAM tipoCamara, Integer potencia, TpCAR Carnet) {
 		super(numBastidor, alturaMaxima, kmAutonomia);
 		this.tipoCamara = tipoCamara;
@@ -15,7 +24,9 @@ public class Dron extends Volador implements Interfaz{
 		this.Carnet = Carnet;
 	
 	}
-	
+	/**
+	 * Constructor por defecto de dron
+	 */
 	public Dron() {
 		super();
 	}

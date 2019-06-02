@@ -1,17 +1,26 @@
 package aire;
 
 import start.Vehiculo;
-
+/**
+ * @author Alejandro
+ * Clase Volador
+ * @version 02/06/2019 
+ *
+ */
 public abstract class Volador extends Vehiculo{
 	private Integer alturaMaxima;
 	private Integer kmAutonomia;
-	
+	/*
+	 * Constructor completo de volador
+	 */
 	public Volador(String numBastidor, Integer alturaMaxima, Integer kmAutonomia) {
 		super(numBastidor);
 		this.alturaMaxima = alturaMaxima;
 		this.kmAutonomia = kmAutonomia;
 	}
-	
+	/**
+	 * Constructor por defecto de volador
+	 */
 	public Volador(){
 		super();
 	}
