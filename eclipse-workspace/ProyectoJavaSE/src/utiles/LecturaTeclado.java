@@ -47,7 +47,7 @@ public class LecturaTeclado {
 			   case 2: respuesta = TpCAR.B2;break;
 			   case 3: respuesta = TpCAR.C1;break;
 			   case 4: respuesta = TpCAR.D;break;
-			   default:System.out.println("Por favor, elija una opción entre 0-4");
+			   default:System.out.println("XXX Por favor, elija una opción entre 0-4 XXX");
 			           lecturaTpCAR("- Tipo de Carnet: ");
 			}
 			return respuesta;
@@ -77,7 +77,7 @@ public class LecturaTeclado {
 				   case 1: respuesta = TpCOM.GASOLINA;break;
 				   case 2: respuesta = TpCOM.DIESEL;break;
 				   case 3: respuesta = TpCOM.ELECTRICO;break;
-				   default:System.out.println("Por favor, elija una opción entre 0-3");
+				   default:System.out.println("XXX Por favor, elija una opción entre 0-3 XXX");
 				           lecturaTpCOM("- Tipo de Combustiple: ");
 				}
 				return respuesta;
@@ -106,7 +106,7 @@ public class LecturaTeclado {
 					   case 1: respuesta = TpCAM.NINGUNA;break;
 					   case 2: respuesta = TpCAM.HD;break;
 					   case 3: respuesta = TpCAM._4K;break;
-					   default:System.out.println("Por favor, elija una opción entre 0-3");
+					   default:System.out.println("XXX Por favor, elija una opción entre 0-3 XXX");
 					           lecturaTpCAM("- Tipo de Cámara: ");
 					}
 					return respuesta;

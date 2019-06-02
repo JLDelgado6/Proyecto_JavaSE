@@ -29,7 +29,8 @@ public class App {
 		
 		case 0:System.out.println("Saliendo.\nSaliendo..\nSaliendo..."); ;break;
 		
-		default:System.out.println("Por favor, elija una opción entre 0-4");break;
+		default:System.out.println("Por favor, elija una opción entre 0-4");
+		        start();
 		}
 	}
 	private void mostrarMenu() {
