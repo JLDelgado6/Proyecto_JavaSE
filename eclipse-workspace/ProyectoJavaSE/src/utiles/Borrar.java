@@ -20,8 +20,8 @@ public class Borrar {
 	/**
 	 * @author José Luis 
 	 * Clase Borrar. Pregunta primero si se quiere volver atrás o se quiere borrar un vehículo
-	 * Cuando se elige borrar, vuelve al menú principal si la lista está vacía, y pide el vehículo a borrar si no.
-	 * Saltan excepciones cuando se introducen caracteres no válidos: valores no numéricos y valores numéricos superiores al índice máximo
+	 * Cuando se elige borrar, vuelve al menú principal si la lista está vacía, y pide el vehículo a borrar si no lo está.
+	 * Se tratan excepciones cuando se introducen caracteres no válidos: valores no numéricos y valores numéricos superiores al índice máximo
 	 * @version 03/06/2019
 	 */
  public static void borrar() {
