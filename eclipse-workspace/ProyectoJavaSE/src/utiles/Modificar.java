@@ -7,7 +7,11 @@ import tierra.Camion;
 import tierra.Coche;
 import tipos.TpCAR;
 import tipos.TpCOM;
-
+/**
+ * @author Alejandro
+ * Clase modificar. Muestra en primer lugar la list con los datos y mediante una lectura del teclado se selecciona el elemento a modificar, según el tipo que sea, lanza la clase ModificarSegunTipos.
+ * @version 02/06/2019 
+ */
 public class Modificar {
 	public static void modificar() {
 		utiles.Listar.listar();
