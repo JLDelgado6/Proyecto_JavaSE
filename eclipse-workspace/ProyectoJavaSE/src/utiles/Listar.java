@@ -10,7 +10,6 @@ import tierra.Coche;
  * @author Alejandro
  * Clase listar. Muestra por pantalla todos los valores de la tabla que se hayan introducido diferenciando entre los cuatro tipos y según cual sea, mostrando sus características.
  * @version 02/06/2019 
- *
  */
 
 public class Listar {

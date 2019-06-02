@@ -5,7 +5,6 @@ import start.Vehiculo;
  * @author Alejandro
  * Clase Volador
  * @version 02/06/2019 
- *
  */
 public abstract class Volador extends Vehiculo{
 	private Integer alturaMaxima;

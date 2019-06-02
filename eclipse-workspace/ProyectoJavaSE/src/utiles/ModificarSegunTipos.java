@@ -13,7 +13,6 @@ import tipos.TpCOM;
  * Clase ModificarSegunTipos. Las clases cuyo nombre comienzan por Mostrar (p.e. MostrarCamion) se limitan a mostrar las características especiales de cada tipo de vehículo en una lista ordenada.
  * Las clases que comienzan con modificar (p.e. ModificarCamion) lanzan un switch de manera que cada uno de los case X sea la característica a modificar. Los tipos se plantean mediante un switch y los Integer/String mediante una lectura de teclado.
  * @version 02/06/2019 
- *
  */
 public class ModificarSegunTipos extends RuntimeException{
 

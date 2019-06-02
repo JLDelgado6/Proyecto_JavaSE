@@ -4,7 +4,6 @@ package aire;
  * @author Alejandro
  * Clase avion
  * @version 02/06/2019 
- *
  */
 public class Avion extends Volador{
 	private Integer maxPasajeros;

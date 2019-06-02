@@ -7,7 +7,6 @@ import tipos.TpCAR;
  * @author Alejandro
  * Clase Dron
  * @version 02/06/2019 
- *
  */
 
 public class Dron extends Volador implements Interfaz{
