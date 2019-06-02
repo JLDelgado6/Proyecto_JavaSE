@@ -20,14 +20,16 @@ public class Borrar {
 		//
 		// lanzar lista
 		Integer vb;
+		Integer tamanoListaMod = utiles.GestList.lstVehiculos.size()+1;
 		try {
 			do {
 				utiles.Listar.listar();
-				System.out.println(utiles.GestList.lstVehiculos);
+				//System.out.println(utiles.GestList.lstVehiculos);
 				vb = utiles.LecturaTeclado.lecturaEntero("* Pulsar elemento que desea borrar. ");
-				Vehiculo vehBorrado = utiles.GestList.lstVehiculos.get(vb);	
+				Vehiculo vehBorrado = utiles.GestList.lstVehiculos.get(vb-1);	
 				utiles.GestList.lstVehiculos.remove(vehBorrado);
-			}while(vb >=0 && vb < utiles.GestList.lstVehiculos.size());
+			}while(vb >=0 && vb < tamanoListaMod);
+			
 			if(utiles.GestList.lstVehiculos.size()==0) {
 				System.out.println("La lista seleccionada está vacía"); //Corregir
 				start.App.main(null);
