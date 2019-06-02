@@ -4,7 +4,9 @@ import tipos.TpCOM;
 import start.Vehiculo;
 
 /**
- * author: JLDelgado6
+ * @author José Luis
+ * Clase Traccion
+ * @version 03/06/2019 
  */
 
 public abstract class Traccion extends Vehiculo {
@@ -13,10 +15,16 @@ public abstract class Traccion extends Vehiculo {
 		private String modelo;
 		private TpCOM tipoCombustible;
 
+		/**
+		 * Constructor por defecto de Traccion
+		 */
 		public Traccion() {
 			super();
 		}
-
+		
+		/**
+		 * Constructor completo de Traccion
+		 */
 		public Traccion(String numBastidor, String marca, String modelo, TpCOM tipoCombustible) {
 			super(numBastidor);
 			this.marca = marca;

@@ -5,7 +5,9 @@ import tipos.TpCAR;
 import tipos.TpCOM;
 
 /**
- * author: JLDelgado6
+ * @author José Luis
+ * Clase Camion
+ * @version 03/06/2019 
  */
 
 public class Camion extends Traccion implements Interfaz {
@@ -14,10 +16,16 @@ public class Camion extends Traccion implements Interfaz {
 	private Integer numEjes;
 	private TpCAR Carnet;
 	
+	/**
+	 * Constructor por defecto de Camion
+	 */
 	public Camion() {
 		super();
 	}
 	
+	/**
+	 * Constructor completo de Camion
+	 */
 	public Camion(String numBastidor, String marca, String modelo, TpCOM tipoCombustible, Integer tara, Integer numEjes, TpCAR Carnet) {
 		super(numBastidor, marca, modelo, tipoCombustible);
 		this.tara = tara;

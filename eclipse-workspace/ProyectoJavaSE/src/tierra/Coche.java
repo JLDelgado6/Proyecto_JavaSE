@@ -5,7 +5,9 @@ import tipos.TpCAR;
 import tipos.TpCOM;
 
 /**
- * author: JLDelgado6
+ * @author José Luis
+ * Clase Coche
+ * @version 03/06/2019 
  */
 
 public class Coche extends Traccion implements Interfaz {
@@ -14,10 +16,16 @@ public class Coche extends Traccion implements Interfaz {
 	private Integer volumenMaletero;
 	private TpCAR Carnet;
 
+	/**
+	 * Constructor por defecto de Coche
+	 */
 	public Coche() {
 		super();
 	}
 	
+	/**
+	 * Constructor completo de Coche
+	 */
 	public Coche(String numBastidor, String marca, String modelo, TpCOM tipoCombustible, Integer numPuertas, Integer volumenMaletero, TpCAR Carnet) {
 		super(numBastidor, marca, modelo, tipoCombustible);
 		this.numPuertas = numPuertas;
