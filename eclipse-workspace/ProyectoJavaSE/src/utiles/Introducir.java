@@ -18,19 +18,28 @@ public class Introducir {
 			} while (opcion != 0);	
 		}
 		
-	    private static void ejecutarOpcion(int opcion) {
-			switch(opcion) {
-			case 1: 
-				System.out.println("Introduzca los siguientes Datos:");
+	private static void ejecutarOpcion(int opcion) {
+		System.out.println("**********************************");
+		switch(opcion) {
+	    	case 1: 
+	    		try {
+	    		System.out.println("Introduzca los siguientes Datos:");
 			    String a1 = utiles.LecturaTeclado.lecturaString("- Número de bastidor: ");
 			    String b1 = utiles.LecturaTeclado.lecturaString("- Marca: ");
 			    String c1 = utiles.LecturaTeclado.lecturaString("- Modelo: ");
 			    Integer d1 = utiles.LecturaTeclado.lecturaEntero("- Números de Puertas: ");
+			    if (d1<=0 || d1>7) {System.out.println("El número de puertas no es correcto");break;}
 			    Integer e1 = utiles.LecturaTeclado.lecturaEntero("- Volumen del maletero: ");
 			    TpCAR f1 = utiles.LecturaTeclado.lecturaTpCAR("- Tipo de Carnet: ");
 			    TpCOM g1 = utiles.LecturaTeclado.lecturaTpCOM("- Tipo de Combustiple: ");
+			    
 			    utiles.GestList.lstVehiculos.add( new Coche(a1,b1,c1,g1,d1,e1,f1));
-			    break;
+			    
+	    		} catch(Exception e1) {
+	    			System.out.println("No es un tipo de dato permitido");
+	    		}
+	    		break;
+	    		
 			case 2: 
 				System.out.println("Introduzca los siguientes Datos:");
 			    String a2 = utiles.LecturaTeclado.lecturaString("- Número de bastidor: ");
@@ -62,7 +71,8 @@ public class Introducir {
 			    utiles.GestList.lstVehiculos.add( new Avion (a4,b4,c4,d4,e4));
 			    break;
 			}    
-			    
+		    System.out.println("**********************************"); 
+		    System.out.println("----------------------------------"); 
 		}
 	   private static void mostrarMenu() {
 			System.out.println("\nMENU VEHÍCULOS");
