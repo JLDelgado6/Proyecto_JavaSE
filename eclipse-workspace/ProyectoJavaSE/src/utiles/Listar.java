@@ -17,8 +17,10 @@ public class Listar {
 		System.out.println("Col1\t Col2");
 		
 		for (Vehiculo v : utiles.GestList.lstVehiculos) {
+			Integer indice;
+			indice = utiles.GestList.lstVehiculos.indexOf(v) + 1;
 			if (v instanceof Coche) {
-				salida =+ utiles.GestList.lstVehiculos.indexOf(v)+ "\t COCHE  " 
+				salida =indice+ "\t COCHE  " 
 						+          v.getNumBastidor() + "\t "
 						+ ((Coche) v).getMarca() + "\t " 
 						+ ((Coche) v).getModelo() + "\t " 
@@ -31,7 +33,7 @@ public class Listar {
 						
 			}
 			if (v instanceof Camion) {
-				salida = utiles.GestList.lstVehiculos.indexOf(v)+ "\t CAMION " 
+				salida = indice+ "\t CAMION " 
 						+          v.getNumBastidor() + "\t "
 						+ ((Camion) v).getMarca() + "\t " 
 						+ ((Camion) v).getModelo() + "\t " 
@@ -43,7 +45,7 @@ public class Listar {
 						+  " ";
 			}
 			if (v instanceof Dron) {
-				salida = utiles.GestList.lstVehiculos.indexOf(v)+ "\t DRON   " 
+				salida = indice+ "\t DRON   " 
 						+          v.getNumBastidor() + "\t "
 						+ ((Dron) v).getAlturaMaxima() + "\t "
 						+ ((Dron) v).getKmAutonomia() + "\t "
@@ -53,8 +55,7 @@ public class Listar {
 						+  " ";  
 			}
 			if (v instanceof Avion) {
-				salida =utiles.GestList.lstVehiculos.indexOf(v)+ "\t AVION  " 
-						
+				salida =indice+ "\t AVION  " 
 						+          v.getNumBastidor() + "\t "
 						+ ((Avion) v).getAlturaMaxima() + "\t "
 						+ ((Avion) v).getKmAutonomia() + "\t "

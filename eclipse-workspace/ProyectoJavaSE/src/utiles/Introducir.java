@@ -66,11 +66,11 @@ public class Introducir {
 		}
 	   private static void mostrarMenu() {
 			System.out.println("\nMENU VEHÍCULOS");
-			System.out.println("******************************");
-			System.out.println("*Opción 1. Introducir un Coche*");
-			System.out.println("*Opción 2. Introducir un Camión *");
+			System.out.println("**********************************");
+			System.out.println("*Opción 1. Introducir un Coche   *");
+			System.out.println("*Opción 2. Introducir un Camión  *");
 			System.out.println("*Opción 3. Introducir un Dron    *");
-			System.out.println("*Opción 4. Introducir un Avión  *");
-			System.out.println("******************************");
+			System.out.println("*Opción 4. Introducir un Avión   *");
+			System.out.println("**********************************");
 		}
 }

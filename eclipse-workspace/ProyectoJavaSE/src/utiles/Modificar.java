@@ -11,34 +11,42 @@ import tipos.TpCOM;
 public class Modificar {
 	public static void modificar() {
 		utiles.Listar.listar();
+		try {
 		int opcion = 0;
+		
 		do {opcion = utiles.LecturaTeclado.lecturaEntero("Indica el número del elemento que quieres modificar (ver Col1)\n" 
 		+ "");
-		Vehiculo vehiculoElegido = utiles.GestList.lstVehiculos.get(opcion);
+		int opcionReal = opcion - 1;
+		
+		Vehiculo vehiculoElegido = utiles.GestList.lstVehiculos.get(opcionReal);
 		
 		
 			if (vehiculoElegido instanceof Coche) {
-				utiles.ModificarSegunTipos.modificarCoche(opcion);
-				utiles.ModificarSegunTipos.mostrarCoche(opcion);
+				utiles.ModificarSegunTipos.modificarCoche(opcionReal);
+				utiles.ModificarSegunTipos.mostrarCoche(opcionReal);
 			}
 			if (vehiculoElegido instanceof Dron) {
-				utiles.ModificarSegunTipos.modificarDron(opcion);
-				utiles.ModificarSegunTipos.mostrarDron(opcion);
+				utiles.ModificarSegunTipos.modificarDron(opcionReal);
+				utiles.ModificarSegunTipos.mostrarDron(opcionReal);
 			}
 			if (vehiculoElegido instanceof Camion) {
-				utiles.ModificarSegunTipos.modificarCamion(opcion);
-				utiles.ModificarSegunTipos.mostrarCamion(opcion);
+				utiles.ModificarSegunTipos.modificarCamion(opcionReal);
+				utiles.ModificarSegunTipos.mostrarCamion(opcionReal);
 			}
 			if (vehiculoElegido instanceof Avion) {
-				utiles.ModificarSegunTipos.modificarAvion(opcion);
-				utiles.ModificarSegunTipos.mostrarAvion(opcion);
+				utiles.ModificarSegunTipos.modificarAvion(opcionReal);
+				utiles.ModificarSegunTipos.mostrarAvion(opcionReal);
 			}
 		
 			
 		
-}while(opcion!=0); {}
+		}while(opcion!=0); 
+}catch(Exception e) {}
+		finally {System.out.println("Revise los datos introducidos por favor\n"); modificar();}
+		
 }
 }
+
 
 	
 
