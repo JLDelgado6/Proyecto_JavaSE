@@ -118,7 +118,7 @@ public class Introducir {
 	    			ejecutarOpcion(4);
 	    		}
 	    		break;
-			case 0: break;
+			case 0: start.App.main(null);break;
 			default:System.out.println("XXX Por favor, elija una opción entre 0-4 XXX");
 			        introducir();
 			}    
