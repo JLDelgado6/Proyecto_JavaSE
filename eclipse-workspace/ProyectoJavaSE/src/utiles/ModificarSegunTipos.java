@@ -14,10 +14,6 @@ import tipos.TpCOM;
  * @version 02/06/2019 
  */
 public class ModificarSegunTipos extends RuntimeException{
-
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	public static void modificarCoche(int opcion)  {
 		
@@ -75,11 +71,12 @@ public class ModificarSegunTipos extends RuntimeException{
 						
 						case 6:try { 
 							Integer valorNuevo11111 = utiles.LecturaTeclado.lecturaEntero("Dame el nuevo volumen del maletero (Tipo Integer)");
-							if(valorNuevo11111<1000 && valorNuevo11111 >0) {
+							if(valorNuevo11111<=1000 && valorNuevo11111 >=0) {
 						((Coche) vehiculoElegido).setVolumenMaletero(valorNuevo11111);mostrarCoche(opcion);break;}
 							else {
 								System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico entre 0 y 1000");
 								mostrarCoche(opcion);
+								break;
 							}
 						}
 						catch(Exception e) {System.out.println("No es un tipo de dato permitido");
@@ -130,11 +127,11 @@ public static void modificarDron(int opcion) {
 						
 							
 						Integer valorNuevo1 = utiles.LecturaTeclado.lecturaEntero("Dame el nuevo valor para la altura máxima (Tipo Integer)");
-					if(valorNuevo1<=7 && valorNuevo1>=2) {
+					if(valorNuevo1<=1000 && valorNuevo1>=0) {
 		/**/				((Dron) vehiculoElegido).setAlturaMaxima(valorNuevo1)
 						;mostrarDron(opcion); 
 						break;}
-					else {	System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico entre 2 y 7");
+					else {	System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico entre 0 y 1000");
 						mostrarDron(opcion);
 						break;
 						}	
@@ -146,11 +143,11 @@ public static void modificarDron(int opcion) {
 					
 					case 3: try { 
 						Integer valorNuevo11 = utiles.LecturaTeclado.lecturaEntero("Dame el nuevo valor para la autonomia (Tipo Integer)");
-						if(valorNuevo11<=7 && valorNuevo11>=2) {
+						if(valorNuevo11<=10000000 && valorNuevo11>=0) {
 					((Dron) vehiculoElegido).setKmAutonomia(valorNuevo11)
 					;mostrarDron(opcion); 
 					break;}
-	/**/					else{System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico entre 2 y 7");
+	/**/					else{System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico entre 0 y 10000000");
 						mostrarDron(opcion);
 						break;
 						}	
@@ -171,12 +168,12 @@ public static void modificarDron(int opcion) {
 								
 					case 5: try {
 						Integer valorNuevo1111 = utiles.LecturaTeclado.lecturaEntero("Dame el nuevo valor de la potencia (Tipo Integer)");
-						if(valorNuevo1111<=7 && valorNuevo1111>=2) {
+						if(valorNuevo1111<=50000 && valorNuevo1111>=10) {
 	/**/				((Dron) vehiculoElegido).setPotencia(valorNuevo1111);
 					mostrarDron(opcion);
 					break;
 					}else{
-					System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico entre 2 y 7");
+					System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico entre 10 y 50000");
 					mostrarDron(opcion);
 					break;
 					}	
@@ -250,11 +247,11 @@ public static void modificarCamion(int opcion) {
 								
 					case 5: try {
 						Integer valorNuevo1111 = utiles.LecturaTeclado.lecturaEntero("Dame el nuevo valor de la tara (Tipo Integer)");
-						if(valorNuevo1111<=7 && valorNuevo1111>=2) {
+						if(valorNuevo1111<=31000 && valorNuevo1111>=500) {
 					((Camion) vehiculoElegido).setTara(valorNuevo1111);
 		/**/			mostrarCamion(opcion);
 					break;
-					}else {	System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico entre 2 y 7");
+					}else {	System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico entre 500 y 31000");
 					mostrarCamion(opcion);
 					break;
 					}}
@@ -265,12 +262,12 @@ public static void modificarCamion(int opcion) {
 					
 					case 6:try { 
 						Integer valorNuevo11111 = utiles.LecturaTeclado.lecturaEntero("Dame el nuevo valor del numero de ejes (Tipo Integer)");
-					if(valorNuevo11111<=7 && valorNuevo11111>=2) {
+					if(valorNuevo11111<=4 && valorNuevo11111>=1) {
 							((Camion) vehiculoElegido).setNumEjes(valorNuevo11111);
 							mostrarCamion(opcion);
 							break;}
 					else {
-						System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico entre 2 y 7");
+						System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico entre 1 y 4");
 						mostrarCamion(opcion);
 						break;
 						}}
@@ -317,10 +314,10 @@ public static void modificarAvion(int opcion) {
 											
 					case 2: try{
 						Integer valorNuevo1 = utiles.LecturaTeclado.lecturaEntero("Dame el nuevo valor para la altura máxima (Tipo Integer)");
-						if(valorNuevo1<=7 && valorNuevo1>=2) {
+						if(valorNuevo1<=12800 && valorNuevo1>=0) {
 					((Avion) vehiculoElegido).setAlturaMaxima(valorNuevo1)
 /**/					;mostrarAvion(opcion); break;}
-						else {	System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico entre 2 y 7");
+						else {	System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico entre 0 y 12800");
 						mostrarAvion(opcion);
 						break;
 				}
@@ -332,10 +329,10 @@ public static void modificarAvion(int opcion) {
 					
 					case 3: try { 
 						Integer valorNuevo11 = utiles.LecturaTeclado.lecturaEntero("Dame el nuevo valor para la autonomia (Tipo Integer)");
-						if(valorNuevo11<=7 && valorNuevo11>=2) {
+						if(valorNuevo11>0) {
 	/**/				((Avion) vehiculoElegido).setKmAutonomia(valorNuevo11)
 					;mostrarAvion(opcion); break;}
-						else {	System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico entre 2 y 7");
+						else {	System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico positivo.");
 						mostrarAvion(opcion);
 						break;
 				}
@@ -347,9 +344,9 @@ public static void modificarAvion(int opcion) {
 				
 					case 4: try {
 						Integer valorNuevo111 = utiles.LecturaTeclado.lecturaEntero("Dame el nuevo valor del máximo de pasajeros (Tipo Integer)");
-/**/						if(valorNuevo111<=7 && valorNuevo111>=2) {
+/**/						if(valorNuevo111<=550 && valorNuevo111>=5) {
 					((Avion) vehiculoElegido).setMaxPasajeros(valorNuevo111);mostrarAvion(opcion);break;}
-						else {	System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico entre 2 y 7");
+						else {	System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico entre 5 y 550");
 						mostrarAvion(opcion);
 						break;
 				}
@@ -360,10 +357,10 @@ public static void modificarAvion(int opcion) {
 					}
 				
 					case 5: try {
-						Integer valorNuevo1111 = utiles.LecturaTeclado.lecturaEntero("Dame el nuevo valor de la potencia (Tipo Integer)");
-						if(valorNuevo1111<=7 && valorNuevo1111>=2) {
+						Integer valorNuevo1111 = utiles.LecturaTeclado.lecturaEntero("Dame el nuevo valor del número de turbinas (Tipo Integer)");
+						if(valorNuevo1111<=6 && valorNuevo1111>=2) {
 /**/					((Avion) vehiculoElegido).setNumTurbinas(valorNuevo1111);mostrarAvion(opcion);break;}
-						else {	System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico entre 2 y 7");
+						else {	System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico entre 2 y 6");
 						mostrarAvion(opcion);
 						break;
 				}
@@ -382,13 +379,13 @@ public static void mostrarCoche(int opcion) {
 	Vehiculo vehiculoElegido = utiles.GestList.lstVehiculos.get(opcion);
 	 
 	System.out.println("El elemento elegido es un coche y sus atributos son los siguientes \n " 
-						+" 1 "+ vehiculoElegido.getNumBastidor()+ "\n " 
-						+" 2 "+ ((Coche) vehiculoElegido).getTipoCombustible() + "\n "
-						+" 3 "+ ((Coche) vehiculoElegido).getMarca() + "\n " 
-						+" 4 "+ ((Coche) vehiculoElegido).getModelo() + "\n " 
-						+" 5 "+ ((Coche) vehiculoElegido).getNumPuertas() + "\n "
-						+" 6 "+ ((Coche) vehiculoElegido).getVolumenMaletero() + "\n " 
-						+" 7 "+ ((Coche) vehiculoElegido).getCarnet() + "\n " );
+						+" 1 Numero de bastidor: "+ vehiculoElegido.getNumBastidor()+ "\n " 
+						+" 2 Tipo de combustible: "+ ((Coche) vehiculoElegido).getTipoCombustible() + "\n "
+						+" 3 Marca: "+ ((Coche) vehiculoElegido).getMarca() + "\n " 
+						+" 4 Modelo: "+ ((Coche) vehiculoElegido).getModelo() + "\n " 
+						+" 5 Número de puertas: "+ ((Coche) vehiculoElegido).getNumPuertas() + "\n "
+						+" 6 Volumen de maletero: "+ ((Coche) vehiculoElegido).getVolumenMaletero() + "\n " 
+						+" 7 Carnet: "+ ((Coche) vehiculoElegido).getCarnet() + "\n " );
 	
 	
 }
@@ -396,12 +393,12 @@ public static void mostrarDron(int opcion) {
 	Vehiculo vehiculoElegido = utiles.GestList.lstVehiculos.get(opcion);
 	 
 	System.out.println("El elemento elegido es un dron y sus atributos son los siguientes \n " 
-						+" 1 "+ vehiculoElegido.getNumBastidor()+ "\n " 
-						+" 2 "+ ((Dron) vehiculoElegido).getAlturaMaxima() + "\n "
-						+" 3 "+ ((Dron) vehiculoElegido).getKmAutonomia() + "\n " 
-						+" 4 "+ ((Dron) vehiculoElegido).getTipoCamara() + "\n " 
-						+" 5 "+ ((Dron) vehiculoElegido).getPotencia() + "\n "
-						+" 6 "+ ((Dron) vehiculoElegido).getCarnet() + "\n " );
+						+" 1 Numero de bastidor: "+ vehiculoElegido.getNumBastidor()+ "\n " 
+						+" 2 Altura máxima: "+ ((Dron) vehiculoElegido).getAlturaMaxima() + "\n "
+						+" 3 Kms Autonomía: "+ ((Dron) vehiculoElegido).getKmAutonomia() + "\n " 
+						+" 4 Tipo de cámara: "+ ((Dron) vehiculoElegido).getTipoCamara() + "\n " 
+						+" 5 Potencia: "+ ((Dron) vehiculoElegido).getPotencia() + "\n "
+						+" 6 Carnet: "+ ((Dron) vehiculoElegido).getCarnet() + "\n " );
 	
 	
 }
@@ -409,13 +406,13 @@ public static void mostrarCamion(int opcion) {
 	Vehiculo vehiculoElegido = utiles.GestList.lstVehiculos.get(opcion);
 	 
 	System.out.println("El elemento elegido es un camion y sus atributos son los siguientes \n " 
-						+" 1 "+ vehiculoElegido.getNumBastidor()+ "\n " 
-						+" 2 "+ ((Camion) vehiculoElegido).getTipoCombustible() + "\n "
-						+" 3 "+ ((Camion) vehiculoElegido).getMarca() + "\n " 
-						+" 4 "+ ((Camion) vehiculoElegido).getModelo() + "\n " 
-						+" 5 "+ ((Camion) vehiculoElegido).getTara() + "\n "
-						+" 6 "+ ((Camion) vehiculoElegido).getNumEjes() + "\n " 
-						+" 7 "+ ((Camion) vehiculoElegido).getCarnet() + "\n " );
+						+" 1 Numero de bastidor: "+ vehiculoElegido.getNumBastidor()+ "\n " 
+						+" 2 Tipo de combustible: "+ ((Camion) vehiculoElegido).getTipoCombustible() + "\n "
+						+" 3 Marca: "+ ((Camion) vehiculoElegido).getMarca() + "\n " 
+						+" 4 Modelo: "+ ((Camion) vehiculoElegido).getModelo() + "\n " 
+						+" 5 Tara: "+ ((Camion) vehiculoElegido).getTara() + "\n "
+						+" 6 Número de ejes: "+ ((Camion) vehiculoElegido).getNumEjes() + "\n " 
+						+" 7 Carnet: "+ ((Camion) vehiculoElegido).getCarnet() + "\n " );
 	
 	
 }
@@ -423,11 +420,11 @@ public static void mostrarAvion(int opcion) {
 	Vehiculo vehiculoElegido = utiles.GestList.lstVehiculos.get(opcion);
 	 
 	System.out.println("El elemento elegido es un avion y sus atributos son los siguientes \n " 
-						+" 1 "+ vehiculoElegido.getNumBastidor()+ "\n " 
-						+" 2 "+ ((Avion) vehiculoElegido).getAlturaMaxima() + "\n "
-						+" 3 "+ ((Avion) vehiculoElegido).getKmAutonomia() + "\n " 
-						+" 4 "+ ((Avion) vehiculoElegido).getMaxPasajeros() + "\n " 
-						+" 5 "+ ((Avion) vehiculoElegido).getNumTurbinas() + "\n ");
+						+" 1 Numero de bastidor: "+ vehiculoElegido.getNumBastidor()+ "\n " 
+						+" 2 Altura máxima: "+ ((Avion) vehiculoElegido).getAlturaMaxima() + "\n "
+						+" 3 Kms Autonomía: "+ ((Avion) vehiculoElegido).getKmAutonomia() + "\n " 
+						+" 4 Máximo pasajeros: "+ ((Avion) vehiculoElegido).getMaxPasajeros() + "\n " 
+						+" 5 Número de turbinas: "+ ((Avion) vehiculoElegido).getNumTurbinas() + "\n ");
 	
 	
 }

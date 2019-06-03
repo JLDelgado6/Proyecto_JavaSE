@@ -5,8 +5,7 @@ import aire.Dron;
 import start.Vehiculo;
 import tierra.Camion;
 import tierra.Coche;
-import tipos.TpCAR;
-import tipos.TpCOM;
+
 /**Clase modificar. Muestra en primer lugar la list con los datos y mediante una lectura del teclado se selecciona el elemento a modificar, según el tipo que sea, lanza la clase ModificarSegunTipos.
  * @author Alejandro
  * @version 02/06/2019 
