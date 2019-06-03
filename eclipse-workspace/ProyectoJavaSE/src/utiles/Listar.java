@@ -12,10 +12,11 @@ import tierra.Coche;
  */
 
 public class Listar {
+	
 
 	public static void listar() {
 
-				
+				if(utiles.GestList.lstVehiculos.size()>0) {
 		String salida = "";
 		System.out.println("Col1\t Col2");
 		
@@ -70,7 +71,12 @@ public class Listar {
 			}
 
 		}
+	else {
+		System.out.println("La lista está vacía, introduzca algun dato");
+		utiles.Introducir.introducir();
+	}
 	
 		}
+}
 
 	
