@@ -8,20 +8,18 @@ import start.Vehiculo;
 import tierra.Camion;
 import tierra.Coche;
 
-/**
+/**Clase Borrar. Permite borrar vehículos listados en el sistema.
  * @author José Luis 
- * Clase Borrar. Permite borrar vehículos listados en el sistema.
  * @version 03/06/2019
  */
 
 @SuppressWarnings("unused")
 public class Borrar {
 
-	/**
-	 * @author José Luis 
-	 * Clase Borrar. Pregunta primero si se quiere volver atrás o se quiere borrar un vehículo
+	/**Función Borrar. Pregunta primero si se quiere volver atrás o se quiere borrar un vehículo
 	 * Cuando se elige borrar, vuelve al menú principal si la lista está vacía, y pide el vehículo a borrar si no lo está.
 	 * Se tratan excepciones cuando se introducen caracteres no válidos: valores no numéricos y valores numéricos superiores al índice máximo
+	 * @author José Luis 
 	 * @version 03/06/2019
 	 */
  public static void borrar() {

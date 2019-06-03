@@ -4,9 +4,8 @@ import interfaz.Interfaz;
 import tipos.TpCAR;
 import tipos.TpCOM;
 
-/**
+/**Esta clase define el objeto coche
  * @author José Luis
- * Clase Coche
  * @version 03/06/2019 
  */
 
@@ -25,6 +24,13 @@ public class Coche extends Traccion implements Interfaz {
 	
 	/**
 	 * Constructor completo de Coche
+	 * @param numBastidor El número de bastidor del coche
+	 * @param marca La marca del coche
+	 * @param modelo El modelo del coche
+	 * @param tipoCombustible El combustible que usa el coche
+	 * @param numPuertas El número de puertas que tiene el coche (entre 2 y 7)
+	 * @param volumenMaletero El volumen del maletero del coche (se especificará en decímetros cúbicos)
+	 * @param Carnet Tipo de carnet necesario para conducir el coche
 	 */
 	public Coche(String numBastidor, String marca, String modelo, TpCOM tipoCombustible, Integer numPuertas, Integer volumenMaletero, TpCAR Carnet) {
 		super(numBastidor, marca, modelo, tipoCombustible);

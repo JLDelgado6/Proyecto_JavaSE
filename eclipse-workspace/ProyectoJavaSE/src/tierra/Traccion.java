@@ -3,9 +3,8 @@ package tierra;
 import tipos.TpCOM;
 import start.Vehiculo;
 
-/**
+/**Clase abstracta Traccion de la que heredan coches y camiones
  * @author José Luis
- * Clase Traccion
  * @version 03/06/2019 
  */
 

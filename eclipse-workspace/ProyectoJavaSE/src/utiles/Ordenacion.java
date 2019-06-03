@@ -10,7 +10,12 @@ import tierra.Camion;
 import tierra.Coche;
 import utiles.TipoVeh;
 
-
+/**Clase Ordenacion. Toma la lista generada por la introducción de vehículos y los ordena según 2 criterios:
+ * En primer lugar, ordena por el tipo de vehículo, en el siguiente orden: Coche, Camión, Dron y Avión.
+ * En segundo lugar, ordena siguiendo el orden alfanumérico del número de bastidor entre los vehículos del mismo tipo
+ * @author José Luis
+ * @version 03/06/2019
+ * */
 @SuppressWarnings("unused")
 public class Ordenacion {
 public static void ordenacion() {

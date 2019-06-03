@@ -8,7 +8,7 @@ import start.Vehiculo;
 public abstract class Volador extends Vehiculo{
 	private Integer alturaMaxima;
 	private Integer kmAutonomia;
-	/*
+	/**
 	 * Constructor completo de volador
 	 */
 	public Volador(String numBastidor, Integer alturaMaxima, Integer kmAutonomia) {

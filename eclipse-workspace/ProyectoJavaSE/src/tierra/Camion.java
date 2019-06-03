@@ -4,9 +4,8 @@ import interfaz.Interfaz;
 import tipos.TpCAR;
 import tipos.TpCOM;
 
-/**
+/**Esta clase define el objeto camion
  * @author José Luis
- * Clase Camion
  * @version 03/06/2019 
  */
 
@@ -25,6 +24,13 @@ public class Camion extends Traccion implements Interfaz {
 	
 	/**
 	 * Constructor completo de Camion
+	 * @param numBastidor El número de bastidor del camión
+	 * @param marca La marca del camión
+	 * @param modelo El modelo del camión
+	 * @param tipoCombustible El combustible que usa el camión
+	 * @param tara El peso que tiene el camión (vacío)
+	 * @param numEjes El número de ejes que tiene el camión
+	 * @param Carnet Tipo de carnet necesario para conducir el camión
 	 */
 	public Camion(String numBastidor, String marca, String modelo, TpCOM tipoCombustible, Integer tara, Integer numEjes, TpCAR Carnet) {
 		super(numBastidor, marca, modelo, tipoCombustible);

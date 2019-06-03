@@ -2,6 +2,11 @@ package utiles;
 
 import start.Vehiculo;
 
+
+/**Clase TipoVeh. Define getters y setters para determinar el tipo de vehículo
+ * @author José Luis
+ * @version 03/06/2019
+ * */
 public class TipoVeh {
 	
 	@SuppressWarnings("unused")
