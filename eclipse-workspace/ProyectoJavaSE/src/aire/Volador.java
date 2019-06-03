@@ -1,9 +1,8 @@
 package aire;
 
 import start.Vehiculo;
-/**
+/**Clase abstracta volador de la que heredan drones y aviones
  * @author Alejandro
- * Clase Volador
  * @version 02/06/2019 
  */
 public abstract class Volador extends Vehiculo{

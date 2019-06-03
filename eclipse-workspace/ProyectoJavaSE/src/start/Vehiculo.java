@@ -1,4 +1,8 @@
 package start;
+/**Clase abstracta vehiculo de la que heredan traccion y volador
+ * @author Alejandro
+ * @version 02/06/2019 
+ */
 
 public class Vehiculo {
 	private String numBastidor;

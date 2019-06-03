@@ -1,4 +1,8 @@
 package start;
+/**Lanza el menú principal con las principales opciones
+ * @author Alejandro
+ * @version 02/06/2019 
+ */
 
 public class App {
 

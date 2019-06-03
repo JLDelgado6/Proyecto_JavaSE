@@ -1,8 +1,7 @@
 package aire;
 
-/**
+/**Esta clase define el objeto avion
  * @author Alejandro
- * Clase avion
  * @version 02/06/2019 
  */
 public class Avion extends Volador{
@@ -10,6 +9,11 @@ public class Avion extends Volador{
 	private Integer numTurbinas;
 	/**
 	 * Constructor completo de avion
+	 * @param numBastidor El número de bastidor del avion
+	 * @param alturaMaxima La altura máxima que alcanza el avion
+	 * @param kmAutonomia La autonomía que tiene el avion
+	 * @param maxPasajeros Los pasajeros maximos del avion
+	 * @param numTurbinas Las turbinas que incluye el avion
 	 */
 	public Avion(String numBastidor,Integer alturaMaxima, Integer kmAutonomia, Integer maxPasajeros, Integer numTurbinas) {
 		super(numBastidor, alturaMaxima, kmAutonomia);

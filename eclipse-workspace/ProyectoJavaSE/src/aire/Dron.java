@@ -3,9 +3,8 @@ package aire;
 import interfaz.Interfaz;
 import tipos.TpCAM;
 import tipos.TpCAR;
-/**
+/**Esta clase define el objeto dron
  * @author Alejandro
- * Clase Dron
  * @version 02/06/2019 
  */
 
@@ -15,6 +14,12 @@ public class Dron extends Volador implements Interfaz{
 	private TpCAR Carnet;
 	/**
 	 * Constructor completo de dron
+	 * @param numBastidor El número de bastidor del dron
+	 * @param alturaMaxima La altura máxima que alcanza el dron
+	 * @param kmAutonomia La autonomía que tiene el dron
+	 * @param tipoCamara La cámara que incluye el dron
+	 * @param potencia La potencia del dron
+	 * @param Carnet Tipo de carnet necesario para conducir el dron
 	 */
 	public Dron(String numBastidor,Integer alturaMaxima, Integer kmAutonomia, TpCAM tipoCamara, Integer potencia, TpCAR Carnet) {
 		super(numBastidor, alturaMaxima, kmAutonomia);
