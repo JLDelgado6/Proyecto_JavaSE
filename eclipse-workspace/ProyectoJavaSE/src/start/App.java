@@ -7,15 +7,22 @@ public class App {
 		app.start();
 	}
 
-	private void start() {		
+	private void start() {	
+		try {
 		int opcion = 0;
 		do {mostrarMenu();
 			opcion = utiles.LecturaTeclado.lecturaEntero("* Pulsar 0 para salir. ");
 			ejecutarOpcion(opcion);
 		} while (opcion != 0);
-		
+}catch(Exception e) {
+			
+		}finally {
+			System.out.println("\nPor favor, introduzca un valor solo en el intervalo 0-4\n");
+			main(null);
+		}
 	}
 	private void ejecutarOpcion(int opcion) {
+		
 		switch(opcion) {
 		case 1: /*utiles.GestList.introducir();*/ utiles.Introducir.introducir() ; break;
 		
@@ -32,6 +39,7 @@ public class App {
 		default:System.out.println("Por favor, elija una opción entre 0-4");
 		        start();
 		}
+		
 	}
 	private void mostrarMenu() {
 		System.out.println("******************");
