@@ -7,7 +7,6 @@ import start.Vehiculo;
 
 /**Clase GestList. Engloba el conjunto de funciones que se usan para crear, borrar, modificar y mostrar la lista
  * La función introducir(Vehiculo v) añade un vehículo a la lista
- * La función borrar() llama a la función homónima creada en la clase Borrar
  * La función getContenido() ordena los elementos de la lista según los criterios especificados en la clase Ordenacion y los muestra
  * La funcion modificar() llama a la función homónima creada en la clase Modificar
  * La función totalElementos() toma el tamaño de la lista de vehículos para su uso en el resto de funciones
@@ -23,7 +22,6 @@ public class GestList {
 	}
 	
 	public static void borrar() {
-		utiles.Borrar.borrar();
 	}
 	
 	public static void getContenido(){
@@ -32,7 +30,7 @@ public class GestList {
 	}
 	
 	public static List<Vehiculo> modificar() {
-		utiles.Modificar.modificar();
+		/*utiles.Modificar.modificar();*/
 		return null;
 	}
 	
