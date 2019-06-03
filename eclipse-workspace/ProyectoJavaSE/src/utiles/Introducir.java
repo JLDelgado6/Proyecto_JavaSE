@@ -8,15 +8,13 @@ import tipos.TpCAM;
 import tipos.TpCAR;
 import tipos.TpCOM;
 
-/**
+/**Clase Introducir. Permite introducir nuevos vehículos al sistema.
  * @author Sebastián
- * Clase Introducir. Permite introducir nuevos vehículos al sistema.
  * @version 02/06/2019 
  */
 public class Introducir {
-	/**
+	/**Clase introducir. Muestra en primer lugar el menu de vehículos disponibles que se pueden introducir en el sistema,y según cual sea la ópción, ejecutara la clase ejecutarOpcion.
 	 * @author Sebastián
-	 * Clase introducir. Muestra en primer lugar el menu de vehículos disponibles que se pueden introducir en el sistema,y según cual sea la ópción, ejecutara la clase ejecutarOpcion.
 	 * @version 02/06/2019 
 	 */
 	public static void introducir() {	
@@ -31,9 +29,8 @@ public class Introducir {
 			} while (opcion != 0);	
 		//utiles.Ordenacion.ordenacion();
 		}
-	/**
+	/**Clase ejecutarOpcion. Según la opción marcada, te pedirá los datos necesarios para guardarlo en el sistema.
 	 * @author Sebastián
-	 * Clase ejecutarOpcion. Según la opción marcada, te pedirá los datos necesarios para guardarlo en el sistema.
 	 * @version 02/06/2019 
 	 */	
 	private static void ejecutarOpcion(int opcion) {
@@ -126,9 +123,8 @@ public class Introducir {
 		    System.out.println("----------------------------------"); 
 		}
 	
-	/**
+	/*** Clase mostrarMenu. Muestra el menú de vehículos posibles a introducir en el sistema.
 	 * @author Sebastián
-	 * Clase mostrarMenu. Muestra el menú de vehiculos posibles a introducir en el sistema.
 	 * @version 02/06/2019 
 	 */
 	   private static void mostrarMenu() {

@@ -1,9 +1,8 @@
 
 package tipos;
 
-/**
+/**Enum tpCAM. Este enum contiene los tipos de cámara posibles.
  * @author Sebastián
- * Enum tpCAM. Este enum contiene los tipos de cámara posibles.
  * @version 02/06/2019 
  */
 public enum TpCAM {

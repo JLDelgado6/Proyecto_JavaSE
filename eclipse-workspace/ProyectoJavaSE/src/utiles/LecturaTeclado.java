@@ -7,16 +7,14 @@ import java.io.InputStreamReader;
 import tipos.TpCAM;
 import tipos.TpCAR;
 import tipos.TpCOM;
-/**
+/**Clase LecturaTeclado. Esta clase contiene todas las clases necesarias para poder leer cualquier tipo de dato que entre al sistema.
  * @author Sebastián
- * Clase LecturaTeclado. Esta clase contiene todas las clases necesarias para poder leer cualquier tipo de dato que entre al sistema.
  * @version 02/06/2019 
  */
 public class LecturaTeclado {
 
-	/**
+	/**Clase lecturaString. Permite introducir al sistema desde el teclado un elemento tipo String.
 	 * @author Sebastián
-	 * Clase lecturaString. Permite introducir al sistema desde el teclado un elemento tipo String.
 	 * @version 02/06/2019
 	 * @return Un elemento String. 
 	 */
@@ -30,9 +28,8 @@ public class LecturaTeclado {
 		}
 		return respuesta;
 	}
-	/**
+	/**Clase lecturaInteger. Permite introducir al sistema desde el teclado un elemento tipo Integer.
 	 * @author Sebastián
-	 * Clase lecturaInteger. Permite introducir al sistema desde el teclado un elemento tipo Integer.
 	 * @version 02/06/2019
 	 * @return Un elemento Integer. 
 	 */
@@ -40,9 +37,8 @@ public class LecturaTeclado {
 		String respuesta  = lecturaString(pregunta);
 		return Integer.parseInt( respuesta );
 	}
-	/**
+	/**Clase lecturaTpCAR. Permite introducir al sistema desde el teclado un elemento tipo enum TpCAR.
 	 * @author Sebastián
-	 * Clase lecturaTpCAR. Permite introducir al sistema desde el teclado un elemento tipo enum TpCAR.
 	 * @version 02/06/2019
 	 * @return Un elemento TpCAR. 
 	 */
@@ -54,9 +50,8 @@ public class LecturaTeclado {
 				return ejecutarOpcionTpCAR(opcion);
 			} while (opcion!= 0);	
 		}
-	/**
+	/**Clase ejecutarOpcionTpCAR. Según la opción marcada, se introducirá en el sistema un tipo de carnet determinado.
 	 * @author Sebastián
-	 * Clase ejecutarOpcionTpCAR. Según la opción marcada, se introducirá en el sistema un tipo de carnet determinado.
 	 * @version 02/06/2019 
 	 */	
 	 private static TpCAR ejecutarOpcionTpCAR (Integer opcion) {
@@ -71,9 +66,8 @@ public class LecturaTeclado {
 			}
 			return respuesta;
 	  }
-	    /**
+	    /**Clase mostrarMenuTpCAR. Muestra el menú de de tipos de carnets de conducir posibles a introducir en el sistema.
 		 * @author Sebastián
-		 * Clase mostrarMenuTpCAR. Muestra el menú de de tipos de carnets de conducir posibles a introducir en el sistema.
 		 * @version 02/06/2019 
 		 */    	   
 	    private static void mostrarMenuTpCAR() {
@@ -85,9 +79,8 @@ public class LecturaTeclado {
 				System.out.println("*Opción 4. Carnet D              *");
 				System.out.println("**********************************");			
 		}
-	    /**
+	    /**Clase lecturaTpCOM. Permite introducir al sistema desde el teclado un elemento tipo enum TpCOM.
 		 * @author Sebastián
-		 * Clase lecturaTpCOM. Permite introducir al sistema desde el teclado un elemento tipo enum TpCOM.
 		 * @version 02/06/2019
 		 * @return Un elemento TpCOM. 
 		 */
@@ -99,9 +92,8 @@ public class LecturaTeclado {
 					return ejecutarOpcionTpCOM(opcion);
 				} while (opcion!=0);
 			}
-	    /**
+	    /**Clase ejecutarOpcionTpCOM. Según la opción marcada, se introducirá en el sistema un tipo de combustible determinado.
 		 * @author Sebastián
-		 * Clase ejecutarOpcionTpCOM. Según la opción marcada, se introducirá en el sistema un tipo de combustible determinado.
 		 * @version 02/06/2019 
 		 */	
 		 private static TpCOM ejecutarOpcionTpCOM (Integer opcion) {
@@ -115,9 +107,8 @@ public class LecturaTeclado {
 				}
 				return respuesta;
 		  }
-		    /**
+		    /**Clase mostrarMenuTpCOM. Muestra el menú de de tipos de combustibles posibles a introducir en el sistema.
 			 * @author Sebastián
-			 * Clase mostrarMenuTpCOM. Muestra el menú de de tipos de combustibles posibles a introducir en el sistema.
 			 * @version 02/06/2019 
 			 */    	   
 		    private static void mostrarMenuTpCOM() {
@@ -128,9 +119,8 @@ public class LecturaTeclado {
 					System.out.println("*Opción 3. Eléctrico             *");
 					System.out.println("**********************************");			
 			}
-		    /**
+		    /**Clase lecturaTpCAM. Permite introducir al sistema desde el teclado un elemento tipo enum TpCAM.
 			 * @author Sebastián
-			 * Clase lecturaTpCAM. Permite introducir al sistema desde el teclado un elemento tipo enum TpCAM.
 			 * @version 02/06/2019
 			 * @return Un elemento TpCAM. 
 			 */
@@ -142,9 +132,8 @@ public class LecturaTeclado {
 						return ejecutarOpcionTpCAM(opcion);
 					} while (opcion!=0);
 				}
-		    /**
+		    /**Clase ejecutarOpcionTpCAM. Según la opción marcada, se introducirá en el sistema un tipo de cámara determinado.
 			 * @author Sebastián
-			 * Clase ejecutarOpcionTpCAM. Según la opción marcada, se introducirá en el sistema un tipo de cámara determinado.
 			 * @version 02/06/2019 
 			 */	
 			    private static TpCAM ejecutarOpcionTpCAM (Integer opcion) {
@@ -158,9 +147,8 @@ public class LecturaTeclado {
 					}
 					return respuesta;
 			    }
-			    /**
+			    /**Clase mostrarMenuTpCAM. Muestra el menú de de tipos de cámaras posibles a introducir en el sistema.
 				 * @author Sebastián
-				 * Clase mostrarMenuTpCAM. Muestra el menú de de tipos de cámaras posibles a introducir en el sistema.
 				 * @version 02/06/2019 
 				 */    	   
 			    private static void mostrarMenuTpCAM() {
