@@ -60,15 +60,32 @@ public class ModificarSegunTipos extends RuntimeException{
 									
 						case 5: try {
 							Integer valorNuevo1111 = utiles.LecturaTeclado.lecturaEntero("Dame el nuevo numero de puertas (Tipo Integer)");
-						((Coche) vehiculoElegido).setNumPuertas(valorNuevo1111);mostrarCoche(opcion);break;}
-						catch(Exception e) {}
-						finally {System.out.println("No es un tipo de dato permitido");};break;
+							
+							if(valorNuevo1111<=7 && valorNuevo1111>=2) {
+								((Coche) vehiculoElegido).setNumPuertas(valorNuevo1111);mostrarCoche(opcion);break;}
+							
+						else {	System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico entre 2 y 7");
+								mostrarCoche(opcion);
+						}break;
+							}
+						catch(Exception e) {System.out.println("No es un tipo de dato permitido");
+						mostrarCoche(opcion);
+						break;
+						}
 						
 						case 6:try { 
 							Integer valorNuevo11111 = utiles.LecturaTeclado.lecturaEntero("Dame el nuevo volumen del maletero (Tipo Integer)");
+							if(valorNuevo11111<1000 && valorNuevo11111 >0) {
 						((Coche) vehiculoElegido).setVolumenMaletero(valorNuevo11111);mostrarCoche(opcion);break;}
-						catch(Exception e) {}
-						finally {System.out.println("No es un tipo de dato permitido");};break;
+							else {
+								System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico entre 0 y 1000");
+								mostrarCoche(opcion);
+							}
+						}
+						catch(Exception e) {System.out.println("No es un tipo de dato permitido");
+						mostrarCoche(opcion);
+						break;
+						}
 						
 						case 7: 
 							do {opcion4 = utiles.LecturaTeclado.lecturaEntero("Para modificar el tipo de carnet selecciona una de las siguientes opciones: \n 1 para B1 \n 2 para B2 \n 3 para C1 \n 4 para D \n 5 para Salir" 
@@ -110,18 +127,38 @@ public static void modificarDron(int opcion) {
 						break;
 											
 					case 2: try{
+						
+							
 						Integer valorNuevo1 = utiles.LecturaTeclado.lecturaEntero("Dame el nuevo valor para la altura máxima (Tipo Integer)");
-					((Dron) vehiculoElegido).setAlturaMaxima(valorNuevo1)
-					;mostrarDron(opcion); break;}
-				catch(Exception e) {}
-				finally {System.out.println("No es un tipo de dato permitido");};break;
+					if(valorNuevo1<=7 && valorNuevo1>=2) {
+		/**/				((Dron) vehiculoElegido).setAlturaMaxima(valorNuevo1)
+						;mostrarDron(opcion); 
+						break;}
+					else {	System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico entre 2 y 7");
+						mostrarDron(opcion);
+						break;
+						}	
+					}
+				catch(Exception e) {System.out.println("No es un tipo de dato permitido");
+				mostrarDron(opcion);
+				break;
+				}
 					
 					case 3: try { 
 						Integer valorNuevo11 = utiles.LecturaTeclado.lecturaEntero("Dame el nuevo valor para la autonomia (Tipo Integer)");
+						if(valorNuevo11<=7 && valorNuevo11>=2) {
 					((Dron) vehiculoElegido).setKmAutonomia(valorNuevo11)
-					;mostrarDron(opcion); break;}
-				catch(Exception e) {}
-				finally {System.out.println("No es un tipo de dato permitido");};break;
+					;mostrarDron(opcion); 
+					break;}
+	/**/					else{System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico entre 2 y 7");
+						mostrarDron(opcion);
+						break;
+						}	
+					}
+				catch(Exception e) {System.out.println("No es un tipo de dato permitido");
+				mostrarDron(opcion);
+				break;
+				}
 					
 					case 4: do {opcion3 = utiles.LecturaTeclado.lecturaEntero("Para modificar el tipo de camara selecciona una de las siguientes opciones: \n 1 para NINGUNA \n 2 para HD \n 3 para 4K \n 4 para Salir" 
 							+ "");
@@ -134,9 +171,20 @@ public static void modificarDron(int opcion) {
 								
 					case 5: try {
 						Integer valorNuevo1111 = utiles.LecturaTeclado.lecturaEntero("Dame el nuevo valor de la potencia (Tipo Integer)");
-					((Dron) vehiculoElegido).setPotencia(valorNuevo1111);mostrarDron(opcion);break;}
-					catch(Exception e) {}
-					finally {System.out.println("No es un tipo de dato permitido");};break;
+						if(valorNuevo1111<=7 && valorNuevo1111>=2) {
+	/**/				((Dron) vehiculoElegido).setPotencia(valorNuevo1111);
+					mostrarDron(opcion);
+					break;
+					}else{
+					System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico entre 2 y 7");
+					mostrarDron(opcion);
+					break;
+					}	
+				}
+					catch(Exception e) {System.out.println("No es un tipo de dato permitido");
+					mostrarDron(opcion);
+					break;
+					}
 					
 					
 					case 6: 
@@ -202,15 +250,35 @@ public static void modificarCamion(int opcion) {
 								
 					case 5: try {
 						Integer valorNuevo1111 = utiles.LecturaTeclado.lecturaEntero("Dame el nuevo valor de la tara (Tipo Integer)");
-					((Camion) vehiculoElegido).setTara(valorNuevo1111);mostrarCamion(opcion);break;}
-					catch(Exception e) {}
-					finally {System.out.println("No es un tipo de dato permitido");};break;
+						if(valorNuevo1111<=7 && valorNuevo1111>=2) {
+					((Camion) vehiculoElegido).setTara(valorNuevo1111);
+		/**/			mostrarCamion(opcion);
+					break;
+					}else {	System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico entre 2 y 7");
+					mostrarCamion(opcion);
+					break;
+					}}
+					catch(Exception e) {System.out.println("No es un tipo de dato permitido");
+					mostrarCamion(opcion);
+					break;
+					}
 					
 					case 6:try { 
 						Integer valorNuevo11111 = utiles.LecturaTeclado.lecturaEntero("Dame el nuevo valor del numero de ejes (Tipo Integer)");
-					((Camion) vehiculoElegido).setNumEjes(valorNuevo11111);mostrarCamion(opcion);break;}
-					catch(Exception e) {}
-					finally {System.out.println("No es un tipo de dato permitido");};break;
+					if(valorNuevo11111<=7 && valorNuevo11111>=2) {
+							((Camion) vehiculoElegido).setNumEjes(valorNuevo11111);
+							mostrarCamion(opcion);
+							break;}
+					else {
+						System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico entre 2 y 7");
+						mostrarCamion(opcion);
+						break;
+						}}
+						
+					catch(Exception e) {System.out.println("No es un tipo de dato permitido");
+					mostrarCamion(opcion);
+					break;
+					}
 					
 					case 7: 
 						do {opcion4 = utiles.LecturaTeclado.lecturaEntero("Para modificar el tipo de carnet selecciona una de las siguientes opciones: \n 1 para B1 \n 2 para B2 \n 3 para C1 \n 4 para D \n 5 para Salir" 
@@ -249,29 +317,61 @@ public static void modificarAvion(int opcion) {
 											
 					case 2: try{
 						Integer valorNuevo1 = utiles.LecturaTeclado.lecturaEntero("Dame el nuevo valor para la altura máxima (Tipo Integer)");
+						if(valorNuevo1<=7 && valorNuevo1>=2) {
 					((Avion) vehiculoElegido).setAlturaMaxima(valorNuevo1)
-					;mostrarAvion(opcion); break;}
-				catch(Exception e) {}
-				finally {System.out.println("No es un tipo de dato permitido");};break;
+/**/					;mostrarAvion(opcion); break;}
+						else {	System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico entre 2 y 7");
+						mostrarAvion(opcion);
+						break;
+				}
+				}
+				catch(Exception e) {System.out.println("No es un tipo de dato permitido");
+				mostrarAvion(opcion);
+				break;
+				}
 					
 					case 3: try { 
 						Integer valorNuevo11 = utiles.LecturaTeclado.lecturaEntero("Dame el nuevo valor para la autonomia (Tipo Integer)");
-					((Avion) vehiculoElegido).setKmAutonomia(valorNuevo11)
+						if(valorNuevo11<=7 && valorNuevo11>=2) {
+	/**/				((Avion) vehiculoElegido).setKmAutonomia(valorNuevo11)
 					;mostrarAvion(opcion); break;}
-				catch(Exception e) {}
-				finally {System.out.println("No es un tipo de dato permitido");};break;
+						else {	System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico entre 2 y 7");
+						mostrarAvion(opcion);
+						break;
+				}
+				}
+				catch(Exception e) {System.out.println("No es un tipo de dato permitido");
+				mostrarAvion(opcion);
+				break;
+				}
 				
 					case 4: try {
 						Integer valorNuevo111 = utiles.LecturaTeclado.lecturaEntero("Dame el nuevo valor del máximo de pasajeros (Tipo Integer)");
+/**/						if(valorNuevo111<=7 && valorNuevo111>=2) {
 					((Avion) vehiculoElegido).setMaxPasajeros(valorNuevo111);mostrarAvion(opcion);break;}
-					catch(Exception e) {}
-					finally {System.out.println("No es un tipo de dato permitido");};break;	
+						else {	System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico entre 2 y 7");
+						mostrarAvion(opcion);
+						break;
+				}
+				}
+					catch(Exception e) {System.out.println("No es un tipo de dato permitido");
+					mostrarAvion(opcion);
+					break;
+					}
 				
 					case 5: try {
 						Integer valorNuevo1111 = utiles.LecturaTeclado.lecturaEntero("Dame el nuevo valor de la potencia (Tipo Integer)");
-					((Avion) vehiculoElegido).setNumTurbinas(valorNuevo1111);mostrarAvion(opcion);break;}
-					catch(Exception e) {}
-					finally {System.out.println("No es un tipo de dato permitido");};break;
+						if(valorNuevo1111<=7 && valorNuevo1111>=2) {
+/**/					((Avion) vehiculoElegido).setNumTurbinas(valorNuevo1111);mostrarAvion(opcion);break;}
+						else {	System.out.println("ERROR!\nEl valor no es coherente con el parámetro a introducir.\nIntroduzca un valor numérico entre 2 y 7");
+						mostrarAvion(opcion);
+						break;
+				}
+				}
+					catch(Exception e) {System.out.println("No es un tipo de dato permitido");
+					mostrarAvion(opcion);
+					break;
+					}
 					
 					}
 		}while(opcion2>=0 ||opcion2<=5);}
