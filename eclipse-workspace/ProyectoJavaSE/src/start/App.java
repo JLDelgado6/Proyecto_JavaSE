@@ -34,7 +34,7 @@ public class App {
 			
 		case 4:utiles.GestList.getContenido(); break;
 				
-		case 0:System.out.println("Saliendo.\nSaliendo..\nSaliendo..."); ;break;
+		case 0:System.out.println("Saliendo.\nSaliendo..\nSaliendo...");break;
 		
 		default:System.out.println("Por favor, elija una opción entre 0-4");
 		        start();break;
