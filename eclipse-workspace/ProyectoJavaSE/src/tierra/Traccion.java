@@ -23,6 +23,10 @@ public abstract class Traccion extends Vehiculo {
 		
 		/**
 		 * Constructor completo de Traccion
+		 * @param numBastidor número de bastidor
+		 * @param marca es la marca del vehículo de Tracción
+		 * @param modelo es el modelo del vehículo de Tracción
+		 * @param tipoCombustible es el tipo de combustible del vehículo de Tracción
 		 */
 		public Traccion(String numBastidor, String marca, String modelo, TpCOM tipoCombustible) {
 			super(numBastidor);
