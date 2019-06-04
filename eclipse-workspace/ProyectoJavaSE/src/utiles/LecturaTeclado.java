@@ -16,7 +16,8 @@ public class LecturaTeclado {
 	/**Clase lecturaString. Permite introducir al sistema desde el teclado un elemento tipo String.
 	 * @author Sebastián
 	 * @version 02/06/2019
-	 * @return Un elemento String. 
+	 * @return Un elemento String.
+	 * @param respuesta El valor del String. 
 	 */
 	public static String lecturaString(String pregunta) {
 		BufferedReader teclado = new BufferedReader(new InputStreamReader(System.in));
@@ -32,6 +33,7 @@ public class LecturaTeclado {
 	 * @author Sebastián
 	 * @version 02/06/2019
 	 * @return Un elemento Integer. 
+	 * @param respuesta El valor del Integer.
 	 */
 	public static Integer lecturaEntero(String pregunta) {
 		String respuesta  = lecturaString(pregunta);
@@ -40,7 +42,8 @@ public class LecturaTeclado {
 	/**Clase lecturaTpCAR. Permite introducir al sistema desde el teclado un elemento tipo enum TpCAR.
 	 * @author Sebastián
 	 * @version 02/06/2019
-	 * @return Un elemento TpCAR. 
+	 * @return Un elemento TpCAR.
+	 * @param respuesta El valor del Enum TpCAR. 
 	 */
 	public static TpCAR lecturaTpCAR(String pregunta) {
 		
@@ -82,7 +85,8 @@ public class LecturaTeclado {
 	    /**Clase lecturaTpCOM. Permite introducir al sistema desde el teclado un elemento tipo enum TpCOM.
 		 * @author Sebastián
 		 * @version 02/06/2019
-		 * @return Un elemento TpCOM. 
+		 * @return Un elemento TpCOM.
+		 * @param respuesta El valor del Enum TpCOM.  
 		 */
 	    public static TpCOM lecturaTpCOM(String pregunta) {
 			
@@ -122,7 +126,8 @@ public class LecturaTeclado {
 		    /**Clase lecturaTpCAM. Permite introducir al sistema desde el teclado un elemento tipo enum TpCAM.
 			 * @author Sebastián
 			 * @version 02/06/2019
-			 * @return Un elemento TpCAM. 
+			 * @return Un elemento TpCAM.
+			 * @param respuesta El valor del Enum TpCAM.  
 			 */
 		    public static TpCAM lecturaTpCAM(String pregunta) {
 				
