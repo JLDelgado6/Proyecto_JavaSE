@@ -10,6 +10,9 @@ public abstract class Volador extends Vehiculo{
 	private Integer kmAutonomia;
 	/**
 	 * Constructor completo de volador
+	 * @param numBastidor número de bastidor
+	 * @param alturaMaxima es la altura máxima del volador
+	 * @param kmAutonomia kilometraje máximo que alcanza el volador
 	 */
 	public Volador(String numBastidor, Integer alturaMaxima, Integer kmAutonomia) {
 		super(numBastidor);
